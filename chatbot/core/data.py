@@ -14,6 +14,7 @@ TRAMITES_FIXTURE = Path(settings.BASE_DIR) / "tramites" / "fixtures" / "tramites
 
 STUDENTS_FIXTURE = Path(settings.BASE_DIR) / "students" / "fixtures" / "students.json"
 ASIG_FIXTURE     = Path(settings.BASE_DIR) / "becas" / "fixtures" / "asignaciones_becas.json"
+HORARIOS_FIXTURE = Path(settings.BASE_DIR) / "horarios" / "fixtures" / "horarios.json"
 
 
 @lru_cache
@@ -65,6 +66,19 @@ def get_becas():
             "nombre": (fields.get("nombre") or "").strip(),
         })
     return becas
+
+
+@lru_cache
+def _load_horarios_raw():
+    """
+    Carga el fixture horarios/fixtures/horarios.json.
+    Si no existe, devuelve lista vacía.
+    """
+    if not HORARIOS_FIXTURE.exists():
+        return []
+    with open(HORARIOS_FIXTURE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 
 def buscar_beca_por_tipo(query: str):
     """
@@ -222,6 +236,178 @@ def _normalize_tramite_raw(item):
         "requisitos": list(fields.get("requisitos") or []),
         "activo": bool(fields.get("activo", True)),
     }
+
+
+def _normalize_horario(item):
+    """
+    Convierte un item crudo del fixture de horarios en un dict liviano,
+    sin incluir el binario de la imagen.
+    """
+    if not item:
+        return None
+    fields = item.get("fields", {}) or {}
+    return {
+        "pk": item.get("pk"),
+        "group_code": (fields.get("group_code") or "").strip().upper(),
+        "titulo": (fields.get("titulo") or "").strip(),
+        "periodo": (fields.get("periodo") or "").strip(),
+        "activo": bool(fields.get("activo", True)),
+        "original_filename": (fields.get("original_filename") or "").strip() or None,
+    }
+
+
+# -------------------------------------------------
+# HORARIOS (basados en horarios/fixtures/horarios.json)
+# -------------------------------------------------
+
+def get_horarios(activos_only: bool = True):
+    """
+    Devuelve la lista de horarios normalizados.
+
+    Cada horario es:
+    {
+        "pk": int,
+        "group_code": str,
+        "titulo": str,
+        "periodo": str,
+        "activo": bool,
+        "original_filename": str | None,
+    }
+    """
+    resultados = []
+    for item in _load_horarios_raw():
+        h = _normalize_horario(item)
+        if not h:
+            continue
+        if activos_only and not h["activo"]:
+            continue
+        resultados.append(h)
+    return resultados
+
+
+def _horarios_index_by_group_code():
+    """
+    Índice interno: group_code -> [items crudos]
+    """
+    idx = {}
+    for item in _load_horarios_raw():
+        fields = item.get("fields", {}) or {}
+        group_code = (fields.get("group_code") or "").strip().upper()
+        if group_code:
+            idx.setdefault(group_code, []).append(item)
+    return idx
+
+
+def buscar_horarios_por_group_code(group_code: str):
+    """
+    Devuelve la lista de horarios para un código de grupo (ej. 5T1),
+    ordenando primero los activos y, dentro de ellos, del pk más reciente al más viejo.
+    """
+    if not group_code:
+        return []
+    group_code = group_code.strip().upper()
+    idx = _horarios_index_by_group_code()
+    items = idx.get(group_code, [])
+    if not items:
+        return []
+
+    activos = []
+    inactivos = []
+    for it in items:
+        f = it.get("fields", {}) or {}
+        if f.get("activo", True):
+            activos.append(it)
+        else:
+            inactivos.append(it)
+
+    activos.sort(key=lambda it: it.get("pk", 0), reverse=True)
+    inactivos.sort(key=lambda it: it.get("pk", 0), reverse=True)
+
+    return [_normalize_horario(it) for it in (activos + inactivos)]
+
+
+def get_horario_estudiante(carnet: str):
+    """
+    Dado un carnet, devuelve:
+    - carnet, nombre
+    - grupo principal (si existe)
+    - horario principal (el más reciente/activo del primer grupo)
+    - todos los grupos y sus horarios asociados
+
+    Estructura:
+    {
+      "carnet": "2021-0001I",
+      "nombre": "Juan Pérez",
+      "grupo": "5T1" | None,
+      "horario": { ... } | None,
+      "grupos": [
+        {
+          "grupo": "5T1",
+          "horarios": [ { ... }, { ... } ]
+        },
+        {
+          "grupo": "5P1",
+          "horarios": [ { ... } ]
+        }
+      ]
+    }
+    """
+    if not carnet:
+        return None
+
+    st = find_student_by_carnet(carnet)
+    if not st:
+        return None
+
+    sfields = st.get("fields", {}) or {}
+    nombre = sfields.get("nombre") or carnet
+    grupos = _get_grupos_from_student_fields(sfields)
+
+    # Si no tiene grupos registrados
+    if not grupos:
+        return {
+            "carnet": carnet.upper(),
+            "nombre": nombre,
+            "grupo": None,
+            "horario": None,
+            "grupos": [],
+        }
+
+    grupos_detalle = []
+    horario_principal = None
+
+    for idx, g in enumerate(grupos):
+        horarios_g = buscar_horarios_por_group_code(g)  # ya normalizados
+        grupos_detalle.append({
+            "grupo": g,
+            "horarios": horarios_g,
+        })
+
+        # Primer grupo + primer horario activo lo usamos como principal
+        if idx == 0 and horarios_g:
+            horario_principal = horarios_g[0]
+
+    return {
+        "carnet": carnet.upper(),
+        "nombre": nombre,
+        "grupo": grupos[0],          # primer grupo como principal
+        "horario": horario_principal,  # puede ser None
+        "grupos": grupos_detalle,    # todos los grupos con sus horarios
+    }
+
+
+def _get_grupos_from_student_fields(sfields: dict):
+    """
+    Extrae y normaliza los grupos de un estudiante.
+    Soporta campos como 'grupo_principal' y 'grupo_secundario'.
+    Devuelve una lista sin duplicados, en mayúsculas.
+    """
+    grupos = []
+    for key in ("grupo_principal", "grupo_secundario"):
+        g = (sfields.get(key) or "").strip().upper()
+        if g and g not in grupos:
+            grupos.append(g)
+    return grupos
 
 
 def _normalize_tramite_raw(item):

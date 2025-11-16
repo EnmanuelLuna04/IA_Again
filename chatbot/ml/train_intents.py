@@ -9,26 +9,142 @@ import json, os
 import re, unicodedata
 
 SPANISH_STOPWORDS = [
-    "de","la","que","el","en","y","a","los","del","se","las","por","un","para",
-    "con","no","una","su","al","lo","como","más","pero","sus","le","ya","o","este",
-    "sí","porque","esta","entre","cuando","muy","sin","sobre","también","me","hasta",
-    "hay","donde","quien","desde","todo","nos","durante","todos","uno","les"
+    "a", "acá", "ahí", "al", "algo", "alguna", "algunas", "alguno", "algunos",
+    "allá", "alli", "allí", "ambos", "ante", "antes", "aquel", "aquella",
+    "aquellas", "aquello", "aquellos", "aquí", "arriba", "así", "aún", "aunque",
+    "bajo", "bastante", "bien",
+    "cada", "casi", "como", "con", "contra", "cual", "cuales", "cualquier",
+    "cualquiera", "cuyo", "cuyos",
+    "de", "debe", "deben", "debido", "del", "demás", "demasiado", "dentro", "desde",
+    "donde", "dos", "durante",
+    "él", "ella", "ellas", "ello", "ellos", "el", "en", "encima", "entonces",
+    "entre", "era", "erais", "éramos", "eran", "eres", "es", "esa", "esas",
+    "ese", "eso", "esos", "esta", "estaba", "estabais", "estábamos", "estaban",
+    "estabas", "estad", "estada", "estadas", "estado", "estados", "estamos",
+    "están", "estar", "estará", "estarán", "estarás", "estaré", "estaréis",
+    "estaría", "estaríais", "estaríamos", "estarían", "estaría", "estas",
+    "este", "estemos", "esto", "estos", "estoy", "estuve", "estuviera",
+    "estuvieran", "estuviese", "estuviesen", "estuvimos", "estuviste",
+    "estuvisteis", "estuvo",
+    "fin", "fue", "fuera", "fueran", "fuesen", "fueron", "fui", "fuimos",
+    "ha", "haber", "había", "habíais", "habíamos", "habían", "habías", "han",
+    "has", "hasta", "hay", "haya", "hayan", "he",
+    "hemos", "hube", "hubiera", "hubieran", "hubiese", "hubiesen", "hubimos",
+    "hubiste", "hubisteis", "hubo",
+    "la", "las", "le", "les", "lo", "los", "luego", "más", "me", "menos",
+    "mi", "mis", "mientras", "muy",
+    "nada", "ni", "ningún", "ninguna", "ninguno", "no", "nos", "nosotras",
+    "nosotros", "nuestra", "nuestras",
+    "nuestro", "nuestros", "nunca",
+    "o", "otra", "otras", "otro", "otros",
+    "para", "pero", "poco", "por", "porque", "primero", "puede", "pueden",
+    "pues",
+    "que", "qué", "quién", "quiénes", "quien", "quienes", "quizá",
+    "se", "sea", "sean", "según", "ser", "será", "serán", "serás", "seré",
+    "seréis", "sería", "seríais", "seríamos", "serían", "si", "sí",
+    "sido", "siempre", "sin", "sino",
+    "sobre", "solamente", "solo", "su", "sus",
+    "tal", "tales", "también", "tan", "tanto", "te", "tenemos", "tener",
+    "tenga", "tengan", "tengo", "ti", "tiempo", "tiene", "tienen", "toda",
+    "todas", "todavía", "todo", "todos", "tras", "tu", "tus",
+    "un", "una", "unas", "uno", "unos",
+    "usted", "ustedes",
+    "va", "vais", "valor", "vamos", "van", "varias", "varios", "vaya",
+    "verdad", "vez", "vosotras", "vosotros",
+    "voy",
+    "y", "ya",
+    "yo"
 ]
+
+COMMON_TYPO_MAP = {
+    # HORARIO
+    "horaro": "horario",
+    "orario": "horario",
+    "horarrio": "horario",
+    "orarrio": "horario",
+    "horrario": "horario",
+    "horraio": "horario",
+
+    # BECA
+    "vaca": "beca",        # error común con b/v
+    "becas": "becas",
+    "veca": "beca",
+    "beaca": "beca",
+    "bekca": "beca",
+
+    # MONOGRAFIA
+    "monogafia": "monografia",
+    "monografiaa": "monografia",
+    "monogrfia": "monografia",
+    "monografhia": "monografia",
+    "monograffia": "monografia",
+
+    # TITULO
+    "tituo": "titulo",
+    "tituulo": "titulo",
+    "tiltulo": "titulo",
+    "titlo": "titulo",
+    "titluo": "titulo",
+
+    # BAJA
+    "vaja": "baja",
+    "bja": "baja",
+    "bajja": "baja",
+    "bajah": "baja",
+
+    # CARNET
+    "carnet": "carnet",
+    "carne": "carnet",
+    "carnett": "carnet",
+    "carné": "carnet",
+    "carnettte": "carnet",
+
+    # GENERAL / OTROS ERRORES COMUNES
+    "aplicar beca": "aplicar_beca",
+    "solicitar beca": "aplicar_beca",
+    "detalle beca": "detalle_beca",
+    "estado beca": "estado_beca",
+    "recibo beca": "donde_recibo_beca",
+    "horarios estudiante": "horario_estudiante",
+    "monografía": "monografia",
+}
+
+
+def fix_common_typos(s: str) -> str:
+    """
+    Reemplaza palabras clave mal escritas por su forma correcta.
+    Trabaja a nivel de palabra completa (usando \b).
+    """
+    for wrong, right in COMMON_TYPO_MAP.items():
+        # \bword\b para evitar reemplazar dentro de otras palabras
+        pattern = r"\b" + re.escape(wrong) + r"\b"
+        s = re.sub(pattern, right, s)
+    return s
 
 def normalize(s: str) -> str:
     if not s:
         return ""
-    s = s.replace("\u00A0", " ")  # NBSP -> espacio normal (copias/pegados)
+    s = s.replace("\u00A0", " ")  # NBSP -> espacio normal
     s = s.lower()
-    s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")  # sin acentos
+    s = "".join(
+        c for c in unicodedata.normalize("NFD", s)
+        if unicodedata.category(c) != "Mn"
+    )  # sin acentos
     s = re.sub(r"[¿?¡!.,;:]", " ", s)  # quita puntuación básica
     s = re.sub(r"\s+", " ", s).strip()
+    # 👇 muy importante: corregir errores TÍPICOS de tu dominio
+    s = fix_common_typos(s)
     return s
 
 # -----------------------
 # Dataset ampliado
 # -----------------------
-BASE_X = [
+# -----------------------
+# Dataset ampliado
+# -----------------------
+
+# Primero separamos las frases en dos listas:
+BASE_X_TIPOS = [
     # =====================
     # Tipos de becas / apoyo económico
     # =====================
@@ -44,6 +160,19 @@ BASE_X = [
     "dame la lista de becas actuales",
     "qué becas puedo solicitar",
     "tipos de becas que ofrece la institución",
+    "qué becas nuevas tienen",
+    "qué becas están habilitadas en este periodo",
+    "cuáles son las becas vigentes",
+    "qué becas están disponibles ahora",
+    "quiero conocer todas las becas que existen",
+    "qué beneficios o becas tienen los estudiantes",
+    "qué becas ofrece la universidad para primer ingreso",
+    "quiero ver todas las becas activas actualmente",
+    "muéstrame los tipos de becas",
+    "qué becas están abiertas para aplicar",
+    "qué apoyos de pago existen para estudiantes nuevos",
+    "qué beneficios estudiantiles ofrecen",
+    "qué becas puedo escoger este semestre",
 
     # Variantes sin decir solo 'beca'
     "qué programas de apoyo económico tienen para estudiantes",
@@ -52,7 +181,17 @@ BASE_X = [
     "qué beneficios de pago o descuentos tienen para estudiantes",
     "qué tipos de ayuda financiera manejan",
     "qué categorías de becas y ayudas económicas manejan",
+    "qué ayudas económicas puedo solicitar",
+    "qué formas de apoyo hay para estudiantes con dificultades financieras",
+    "qué tipos de apoyo económico hay para continuar mis estudios",
+    "qué beneficios financieros da la institución",
+    "qué opciones de financiamiento tengo en la universidad",
+    "qué alternativas económicas ofrecen a los estudiantes",
+    "qué ayudas y descuentos están disponibles ahora",
+    "qué apoyos económicos puedo pedir este semestre",
+]
 
+BASE_X_REQUISITOS = [
     # =====================
     # Requisitos de becas / ayudas económicas
     # =====================
@@ -68,31 +207,39 @@ BASE_X = [
     "qué criterios debo cumplir para beca",
     "qué requisitos académicos o administrativos se necesitan",
     "qué debo presentar para solicitar una beca",
+    "qué requisitos debe cumplir un estudiante para beca",
+    "cómo puedo saber si califico para una beca",
+    "qué debo cumplir para que me otorguen una beca",
+    "información de requisitos para becas estudiantiles",
+    "documentación requerida para solicitar beca",
+    "qué requisitos piden para una beca universitaria",
+    "necesito saber los requisitos para becas",
+    "cuáles son los pasos y requisitos para becas",
 
-    # Variantes sin decir solo 'beca'
+    # Variantes sin decir 'beca'
     "qué requisitos piden para las ayudas económicas",
     "qué se necesita para obtener apoyo económico",
     "qué documentos solicitan para ayuda económica",
-    "qué debo cumplir para acceder a una beca o ayuda económica",
-    "qué requisitos académicos debo tener para la beca",
-    "cómo saber si califico para una beca o ayuda económica",
+    "qué debo cumplir para acceder a una ayuda financiera",
+    "qué requisitos académicos debo tener para apoyo económico",
+    "cómo saber si califico para una ayuda económica",
+    "cuáles son las condiciones para obtener apoyo económico",
+    "qué documentación piden para apoyo económico",
 ]
 
-BASE_y = [
-    # Tipos de becas / apoyo económico (18 frases)
-    "tipos_becas","tipos_becas","tipos_becas","tipos_becas","tipos_becas","tipos_becas",
-    "tipos_becas","tipos_becas","tipos_becas","tipos_becas","tipos_becas","tipos_becas",
-    "tipos_becas","tipos_becas","tipos_becas","tipos_becas","tipos_becas","tipos_becas",
+# BASE_X final es la unión de ambas
+BASE_X = BASE_X_TIPOS + BASE_X_REQUISITOS
 
-    # Requisitos de becas / ayudas económicas (18 frases)
-    "requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas",
-    "requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas",
-    "requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas","requisitos_becas",
-]
+# Y BASE_y se calcula automáticamente para que tenga SIEMPRE la misma longitud
+BASE_y = (
+    ["tipos_becas"] * len(BASE_X_TIPOS)
+    + ["requisitos_becas"] * len(BASE_X_REQUISITOS)
+)
+
 
 
 # -----------------------
-# Bloque: aplicar_beca
+# Bloque: aplicar_beca (MUY AMPLIADO)
 # -----------------------
 APLICAR_BLOQ = [
     "como aplico a una beca",
@@ -151,12 +298,18 @@ APLICAR_BLOQ = [
     "como postular a beca academica",
     "proceso para enviar solicitud de beca",
     "quiero conocer pasos para aplicar a beca",
-    "informacion sobre becas disponibles y aplicacion"
+    "informacion sobre becas disponibles y aplicacion",
+    "como iniciar el proceso de beca",
+    "donde puedo registrar mi solicitud de beca",
+    "quiero saber como enviar mi formulario de beca",
+    "que proceso debo seguir para una beca",
+    "que pasos siguen después de aplicar a una beca",
+    "como registrarme para aplicar a una beca",
 ]
 
 
 # -----------------------
-# Bloque: donde_recibo_beca (caja o depósito)
+# Bloque: donde_recibo_beca (MUY AMPLIADO)
 # -----------------------
 DONDE_RECIBO_BLOQ = [
     "donde puedo recibir la beca",
@@ -200,10 +353,35 @@ DONDE_RECIBO_BLOQ = [
     "el pago de la beca es por deposito",
     "me pueden depositar la beca",
     "tengo que ir a caja para cobrar la beca",
+    "la beca llega por banco o la recojo en caja",
+    "donde se procesa el pago de la beca",
+    "como funciona el pago de becas",
 ]
 
+
 # -----------------------
-# Bloques: estado/detalle por carnet
+# Bloque: horario del estudiante (más amplio)
+# -----------------------
+HORARIO_BLOQ = [
+    "cual es mi horario 2021-0001i",
+    "que horario tengo 2021-0001i",
+    "quiero saber mi horario 2021-0001i",
+    "necesito mi horario de clases 2021-0001i",
+    "podrias decirme mi horario mi carnet es 2021-0001i",
+    "dime mi horario con carnet 2021-0001i",
+    "a que grupo pertenezco 2021-0001i",
+    "que grupo tengo con carnet 2021-0001i",
+    "quiero saber mi grupo de clases 2021-0001i",
+    "cual es mi grupo segun mi carnet 2021-0001i",
+    "mostrar horario del estudiante 2021-0001i",
+    "mi horario de clases es 2021-0001i",
+    "consultar horario con carnet 2021-0001i",
+    "saber mi horario con carnet 2021-0001i",
+]
+
+
+# -----------------------
+# Bloques estado/detalle de beca
 # -----------------------
 ESTADO_BLOQ = [
     "tengo beca? mi carnet es 2021-0001i",
@@ -220,7 +398,7 @@ ESTADO_BLOQ = [
     "comprobar beca del estudiante 2021-0001i",
     "quiero confirmar si mi beca está activa 2021-0001i",
     "estado actual de mi beca 2021-0001i",
-    "mi beca está vigente? carnet 2021-0001i"
+    "mi beca está vigente? carnet 2021-0001i",
 ]
 
 DETALLE_BLOQ = [
@@ -242,15 +420,12 @@ DETALLE_BLOQ = [
     "explicación detallada de mi beca 2021-0001i",
     "información de la beca que tengo asignada 2021-0001i",
     "qué categoría de beca tengo 2021-0001i",
-    "detalle de beneficios de mi beca carnet 2021-0001i"
+    "detalle de beneficios de mi beca carnet 2021-0001i",
 ]
 
 
 # -----------------------
 # Bloques: trámites académicos
-# -----------------------
-# -----------------------
-# Trámites Monografía
 # -----------------------
 TRAMITE_MONOGRAFIA_BLOQ = [
     "que necesito para presentar la monografia",
@@ -268,12 +443,9 @@ TRAMITE_MONOGRAFIA_BLOQ = [
     "procedimiento para entregar la monografia",
     "requisitos para la entrega final de monografia",
     "como presentar el protocolo de monografia",
-    "trámites para la defensa final de la monografia"
+    "trámites para la defensa final de la monografia",
 ]
 
-# -----------------------
-# Trámites Título
-# -----------------------
 TRAMITE_TITULO_BLOQ = [
     "que necesito para solicitar mi titulo universitario",
     "requisitos para tramitar el titulo universitario",
@@ -289,12 +461,9 @@ TRAMITE_TITULO_BLOQ = [
     "pasos y documentos para titulo universitario",
     "quiero solicitar mi titulo profesional",
     "guia para el tramite del titulo universitario",
-    "información sobre como obtener mi titulo"
+    "información sobre como obtener mi titulo",
 ]
 
-# -----------------------
-# Trámites Baja
-# -----------------------
 TRAMITE_BAJA_BLOQ = [
     "como me doy de baja de la universidad",
     "quiero retirarme de la carrera",
@@ -310,8 +479,9 @@ TRAMITE_BAJA_BLOQ = [
     "tramite para suspender temporalmente la carrera",
     "quiero darme de baja del semestre actual",
     "documentos necesarios para baja universitaria",
-    "información sobre baja académica"
+    "información sobre baja académica",
 ]
+
 
 # -----------------------
 # Armar X / y (siempre consistentes)
@@ -328,6 +498,7 @@ X = (
     + TRAMITE_MONOGRAFIA_BLOQ
     + TRAMITE_TITULO_BLOQ
     + TRAMITE_BAJA_BLOQ
+    + HORARIO_BLOQ
 )
 
 y = (
@@ -339,7 +510,9 @@ y = (
     + ["tramite_monografia"] * len(TRAMITE_MONOGRAFIA_BLOQ)
     + ["tramite_titulo"] * len(TRAMITE_TITULO_BLOQ)
     + ["tramite_baja"] * len(TRAMITE_BAJA_BLOQ)
+    + ["horario_estudiante"] * len(HORARIO_BLOQ)
 )
+
 
 
 # -----------------------
@@ -374,11 +547,21 @@ else:
 # Pipeline y entrenamiento
 # -----------------------
 pipeline = Pipeline([
-  ("tfidf", TfidfVectorizer(lowercase=True, stop_words=SPANISH_STOPWORDS,
-                            ngram_range=(1,2), min_df=1)),
-  ("mlp", MLPClassifier(hidden_layer_sizes=(16,), activation="relu",
-                        max_iter=800, random_state=42))
+  ("tfidf", TfidfVectorizer(
+        lowercase=True,
+        analyzer="char_wb",      # 👈 n-gramas de caracteres
+        ngram_range=(3,5),       # 3 a 5 caracteres, buen rango para español
+        min_df=1
+  )),
+  ("mlp", MLPClassifier(
+        hidden_layer_sizes=(32,),
+        activation="relu",
+        max_iter=1000,
+        random_state=42
+  ))
 ])
+
+
 
 pipeline.fit(X_train, y_train)
 print(classification_report(y_test, pipeline.predict(X_test)))

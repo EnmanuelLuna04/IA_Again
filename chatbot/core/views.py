@@ -16,16 +16,18 @@ from .data import (
     get_tramites_monografia,
     get_tramite_titulo_universitario,
     get_tramite_baja_universidad,
+    get_horario_estudiante,  # ← coma extra corregida
 )
 
-
 CARNET_REGEX = re.compile(r"\b(20\d{2}-\d{4}I)\b", re.IGNORECASE)
+
 
 def _extract_carnet(text: str):
     if not text:
         return None
     m = CARNET_REGEX.search(text)
     return m.group(1).upper() if m else None
+
 
 def _get_request_data(request):
     """
@@ -35,7 +37,7 @@ def _get_request_data(request):
     if hasattr(request, "data"):
         return request.data
 
-    # WSGIRequest: intentar JSON en el body
+    # WSGIRequest: intentar JSON del body
     try:
         body = (request.body or b"").decode("utf-8").strip()
         if body:
@@ -51,46 +53,66 @@ def _get_request_data(request):
 
     return {}
 
-@api_view(["POST"])              # si DRF está instalado, convierte a Request
+
+@api_view(["POST"])
 @permission_classes([AllowAny])
 def nlp_intent(request):
     data = _get_request_data(request)
     q = (data or {}).get("query", "")
+
     if not isinstance(q, str):
         q = str(q or "")
     q = q.strip()
 
     if not q:
         return Response({"detail": "query requerido"}, status=status.HTTP_400_BAD_REQUEST)
-    
+
     ql = q.lower()
     carnet = _extract_carnet(q)
 
-    # Si la frase indica estado/detalle de beca, forzamos la intención,
-    # y si no hay carnet devolvemos el mensaje pidiéndolo.
+    # ─────────────────────────────────────────────
+    # Forzar intención: estado_beca
+    # ─────────────────────────────────────────────
     if any(p in ql for p in ["tengo beca", "estado de beca", "ver si tengo beca"]):
         if not carnet:
             return Response({
-                "query": q, "intent": "estado_beca", "confidence": 1.0,
-                "answer": {"mensaje": "Necesito tu carnet (formato 2021-0001I) para verificar si tienes beca."}
+                "query": q,
+                "intent": "estado_beca",
+                "confidence": 1.0,
+                "answer": {
+                    "mensaje": "Necesito tu carnet (formato 2021-0001I) para verificar si tienes beca."
+                }
             }, status=200)
 
+    # Forzar intención: detalle_beca
     if any(p in ql for p in ["cual beca tengo", "qué beca tengo", "que beca tengo", "detalle de mi beca"]):
         if not carnet:
             return Response({
-                "query": q, "intent": "detalle_beca", "confidence": 1.0,
-                "answer": {"mensaje": "Pásame tu carnet (formato 2021-0001I) y te digo cuál beca tienes."}
+                "query": q,
+                "intent": "detalle_beca",
+                "confidence": 1.0,
+                "answer": {
+                    "mensaje": "Pásame tu carnet (formato 2021-0001I) y te digo cuál beca tienes."
+                }
             }, status=200)
 
-
+    # ─────────────────────────────────────────────
+    # Predicción NLP
+    # ─────────────────────────────────────────────
     pred = predecir_intencion(q)
     intent = pred.get("intent", "desconocido")
     confidence = float(pred.get("confidence", 0.0))
-    payload = {"query": q, "intent": intent, "confidence": round(confidence, 3)}
 
-    # ajuste suave por carnet + palabra 'beca'
+    payload = {
+        "query": q,
+        "intent": intent,
+        "confidence": round(confidence, 3),
+    }
+
+    # Ajuste inteligente por carnet + palabra "beca"
     carnet = _extract_carnet(q)
     q_lower = q.lower()
+
     if carnet and "beca" in q_lower:
         if any(w in q_lower for w in ["detalle", "cuál", "cual", "qué beca", "que beca"]):
             intent = "detalle_beca"
@@ -98,34 +120,46 @@ def nlp_intent(request):
             intent = "estado_beca"
         payload["intent"] = intent
 
+    # ─────────────────────────────────────────────
+    # INTENCIONES
+    # ─────────────────────────────────────────────
+
+    # TIPOS DE BECAS
     if intent == "tipos_becas":
         tipos = [b["tipo"] or (b.get("nombre") or "Beca") for b in get_becas()]
         payload["answer"] = {"tipos_becas": tipos}
 
+    # REQUISITOS DE BECAS
     elif intent == "requisitos_becas":
         candidatos = buscar_beca_por_tipo(q)
         if candidatos:
             payload["answer"] = {
-                "becas": [{"tipo": b["tipo"], "requisitos": b["requisitos"]} for b in candidatos]
+                "becas": [
+                    {"tipo": b["tipo"], "requisitos": b["requisitos"]}
+                    for b in candidatos
+                ]
             }
         else:
             payload["answer"] = {
-                "requisitos_por_beca": {b["tipo"]: b["requisitos"] for b in get_becas()}
+                "requisitos_por_beca": {
+                    b["tipo"]: b["requisitos"] for b in get_becas()
+                }
             }
 
+    # ESTADO DE BECA
     elif intent == "estado_beca":
         if not carnet:
             payload["answer"] = {
-                "mensaje": "Pásame tu carnet (formato 2021-0001I) y te digo si tienes beca y de qué tipo."
+                "mensaje": (
+                    "Pásame tu carnet (formato 2021-0001I) y te digo si tienes beca "
+                    "y de qué tipo."
+                )
             }
         else:
             st = find_student_by_carnet(carnet)
             if not st:
-                payload["answer"] = {
-                    "mensaje": f"No encontré el carnet {carnet} en el sistema."
-                }
+                payload["answer"] = {"mensaje": f"No encontré el carnet {carnet} en el sistema."}
             else:
-                # Reutilizamos la lógica de detalle_beca para obtener la info completa
                 info = detalle_beca(carnet)
                 nombre = st.get("fields", {}).get("nombre") or carnet
 
@@ -143,7 +177,7 @@ def nlp_intent(request):
                             "tiene_beca": True,
                             "carnet": carnet,
                             "nombre": nombre,
-                            "beca": info.get("beca"),          # 👉 tipo/nombre de beca
+                            "beca": info.get("beca"),
                             "porcentaje": info.get("porcentaje"),
                             "periodo": info.get("periodo"),
                             "estado": info.get("estado"),
@@ -151,11 +185,16 @@ def nlp_intent(request):
                         }
                     }
 
+    # APLICAR A BECA
     elif intent == "aplicar_beca":
         candidatos = buscar_beca_por_tipo(q)
+
         if candidatos:
             payload["answer"] = {
-                "becas": [{"tipo": b["tipo"], "requisitos": b["requisitos"]} for b in candidatos]
+                "becas": [
+                    {"tipo": b["tipo"], "requisitos": b["requisitos"]}
+                    for b in candidatos
+                ]
             }
         else:
             tipos = [b["tipo"] or (b.get("nombre") or "Beca") for b in get_becas()]
@@ -164,12 +203,14 @@ def nlp_intent(request):
                 "tipos_becas": tipos,
             }
 
+    # DÓNDE RECIBO BECA
     elif intent == "donde_recibo_beca":
         payload["answer"] = {
             "mensaje": "La beca se recibe según tu asignación (pago en Caja o Depósito bancario).",
             "metodos_entrega": ["Caja", "Depósito"],
         }
 
+    # DETALLE DE BECA
     elif intent == "detalle_beca":
         if not carnet:
             payload["answer"] = {
@@ -178,12 +219,11 @@ def nlp_intent(request):
         else:
             st = find_student_by_carnet(carnet)
             if not st:
-                payload["answer"] = {
-                    "mensaje": f"No encontré el carnet {carnet} en el sistema."
-                }
+                payload["answer"] = {"mensaje": f"No encontré el carnet {carnet} en el sistema."}
             else:
                 info = detalle_beca(carnet)
                 nombre = st.get("fields", {}).get("nombre") or carnet
+
                 if not info:
                     payload["answer"] = {
                         "detalle_beca": {
@@ -205,6 +245,63 @@ def nlp_intent(request):
                             "activo": info.get("activo", False),
                         }
                     }
+
+    
+    elif intent == "horario_estudiante":
+        if not carnet:
+            payload["answer"] = {
+                "mensaje": "Pásame tu carnet (formato 2021-0001I) y te muestro tu grupo y horarios."
+            }
+        else:
+            info = get_horario_estudiante(carnet)
+            if not info:
+                payload["answer"] = {
+                    "mensaje": f"No encontré el carnet {carnet} en el sistema."
+                }
+            else:
+                grupos = info.get("grupos") or []
+                tiene_algún_horario = any((g.get("horarios") for g in grupos))
+
+                if not grupos:
+                    payload["answer"] = {
+                        "horario": {
+                            "tiene_horario": False,
+                            "carnet": info["carnet"],
+                            "nombre": info["nombre"],
+                            "grupo": None,
+                            "mensaje": "No encontré ningún grupo asignado para este estudiante.",
+                            "grupos": [],
+                        }
+                    }
+                elif not tiene_algún_horario:
+                    payload["answer"] = {
+                        "horario": {
+                            "tiene_horario": False,
+                            "carnet": info["carnet"],
+                            "nombre": info["nombre"],
+                            "grupo": info["grupo"],
+                            "mensaje": "Tienes grupo, pero no encontré horarios registrados para tus grupos.",
+                            "grupos": grupos,  # igual devolvemos los grupos sin horarios
+                        }
+                    }
+                else:
+                    h = info.get("horario")  # horario principal (puede ser del primer grupo)
+                    payload["answer"] = {
+                        "horario": {
+                            "tiene_horario": True,
+                            "carnet": info["carnet"],
+                            "nombre": info["nombre"],
+                            # principal
+                            "grupo": info["grupo"],
+                            "periodo": h.get("periodo") if h else None,
+                            "titulo": h.get("titulo") if h else None,
+                            "horario_id": h.get("pk") if h else None,
+                            "archivo": h.get("original_filename") if h else None,
+                            # todos los grupos
+                            "grupos": grupos,
+                        }
+                    }
+
 
     # =========================
     # NUEVOS INTENTS: TRÁMITES
