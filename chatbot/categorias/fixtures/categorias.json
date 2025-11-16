@@ -2,6 +2,6 @@
   {"model": "categorias.categoria", "pk": 1, "fields": {"nombre": "Becas", "descripcion": "Información sobre becas y ayuda financiera"}},
   {"model": "categorias.categoria", "pk": 2, "fields": {"nombre": "Requisitos de ingreso", "descripcion": "Documentos y pasos necesarios para ingresar"}},
   {"model": "categorias.categoria", "pk": 3, "fields": {"nombre": "Horarios", "descripcion": "Consulta de horarios de clases"}},
-  {"model": "categorias.categoria", "pk": 4, "fields": {"nombre": "Cursos y programas", "descripcion": "Información de carreras y materias"}},
+  {"model": "categorias.categoria", "pk": 4, "fields": {"nombre": "Cursos y programas", "descripcion": "Información de carreras y materias"}}, 
   {"model": "categorias.categoria", "pk": 5, "fields": {"nombre": "Procesos administrativos", "descripcion": "Gestión académica y trámites institucionales"}}
 ]
