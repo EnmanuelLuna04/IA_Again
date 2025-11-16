@@ -1,0 +1,552 @@
+[
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 1,
+    "fields": {
+      "student": 1,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 2,
+    "fields": {
+      "student": 3,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 3,
+    "fields": {
+      "student": 4,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 4,
+    "fields": {
+      "student": 6,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 5,
+    "fields": {
+      "student": 11,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 6,
+    "fields": {
+      "student": 15,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 7,
+    "fields": {
+      "student": 19,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 8,
+    "fields": {
+      "student": 20,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 9,
+    "fields": {
+      "student": 21,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 10,
+    "fields": {
+      "student": 23,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 11,
+    "fields": {
+      "student": 25,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 12,
+    "fields": {
+      "student": 30,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 13,
+    "fields": {
+      "student": 31,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 14,
+    "fields": {
+      "student": 32,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 15,
+    "fields": {
+      "student": 33,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 16,
+    "fields": {
+      "student": 36,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 17,
+    "fields": {
+      "student": 38,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 18,
+    "fields": {
+      "student": 39,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 19,
+    "fields": {
+      "student": 40,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 20,
+    "fields": {
+      "student": 42,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 21,
+    "fields": {
+      "student": 43,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 22,
+    "fields": {
+      "student": 44,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 23,
+    "fields": {
+      "student": 45,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 24,
+    "fields": {
+      "student": 46,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 25,
+    "fields": {
+      "student": 48,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 26,
+    "fields": {
+      "student": 49,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 27,
+    "fields": {
+      "student": 52,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 28,
+    "fields": {
+      "student": 53,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 29,
+    "fields": {
+      "student": 54,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 30,
+    "fields": {
+      "student": 56,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 31,
+    "fields": {
+      "student": 57,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 32,
+    "fields": {
+      "student": 58,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 33,
+    "fields": {
+      "student": 60,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 34,
+    "fields": {
+      "student": 62,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 35,
+    "fields": {
+      "student": 63,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 36,
+    "fields": {
+      "student": 65,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 37,
+    "fields": {
+      "student": 67,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 38,
+    "fields": {
+      "student": 69,
+      "beca": 3,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 39,
+    "fields": {
+      "student": 70,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 40,
+    "fields": {
+      "student": 71,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 41,
+    "fields": {
+      "student": 73,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 42,
+    "fields": {
+      "student": 74,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 43,
+    "fields": {
+      "student": 83,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 44,
+    "fields": {
+      "student": 86,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 45,
+    "fields": {
+      "student": 87,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 46,
+    "fields": {
+      "student": 93,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 47,
+    "fields": {
+      "student": 94,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 48,
+    "fields": {
+      "student": 95,
+      "beca": 1,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 49,
+    "fields": {
+      "student": 96,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  },
+  {
+    "model": "becas.asignacionbeca",
+    "pk": 50,
+    "fields": {
+      "student": 100,
+      "beca": 2,
+      "periodo": "I Semestre 2025",
+      "estado": "activa",
+      "activo": true
+    }
+  }
+]

@@ -1,0 +1,6767 @@
+[
+  {
+    "model": "students.student",
+    "pk": 1,
+    "fields": {
+      "nombre": "Juan José González Morales",
+      "carnet": "2021-0001I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 2,
+    "fields": {
+      "nombre": "María Fernanda López Cruz",
+      "carnet": "2021-0002I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 3,
+    "fields": {
+      "nombre": "Carlos Eduardo Martínez Díaz",
+      "carnet": "2021-0003I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 4,
+    "fields": {
+      "nombre": "Ana Sofía Rodríguez Pérez",
+      "carnet": "2021-0004I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 5,
+    "fields": {
+      "nombre": "José Alejandro Gutiérrez Torres",
+      "carnet": "2021-0005I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": "4T1",
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 6,
+    "fields": {
+      "nombre": "Luis Miguel Castillo Herrera",
+      "carnet": "2021-0006I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 7,
+    "fields": {
+      "nombre": "Valeria Gabriela Ramos Mejía",
+      "carnet": "2021-0007I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 8,
+    "fields": {
+      "nombre": "Andrés Felipe Molina Ruiz",
+      "carnet": "2021-0008I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 9,
+    "fields": {
+      "nombre": "Camila Alejandra Rivas Ortega",
+      "carnet": "2021-0009I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 10,
+    "fields": {
+      "nombre": "Fernando José Pineda Solís",
+      "carnet": "2021-0010I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 11,
+    "fields": {
+      "nombre": "Daniela Isabel Navarro Gómez",
+      "carnet": "2021-0011I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": "3T1",
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 12,
+    "fields": {
+      "nombre": "Gabriel Antonio Rivera Chavarría",
+      "carnet": "2021-0012I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": "3T1",
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 13,
+    "fields": {
+      "nombre": "Andrea Carolina López Jiménez",
+      "carnet": "2021-0013I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": "2M1",
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 14,
+    "fields": {
+      "nombre": "Jorge Luis García Palma",
+      "carnet": "2021-0014I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 15,
+    "fields": {
+      "nombre": "Karla Patricia Sánchez López",
+      "carnet": "2021-0015I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 16,
+    "fields": {
+      "nombre": "Santiago David Herrera Ruiz",
+      "carnet": "2021-0016I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 17,
+    "fields": {
+      "nombre": "Lucía Fernanda Vargas Ramírez",
+      "carnet": "2021-0017I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": "2M1",
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 18,
+    "fields": {
+      "nombre": "Pablo Sebastián Torres Galo",
+      "carnet": "2021-0018I",
+      "anio_actual": 5,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 19,
+    "fields": {
+      "nombre": "Adriana Beatriz Cano Flores",
+      "carnet": "2021-0019I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 20,
+    "fields": {
+      "nombre": "Rodrigo Esteban Pérez Mejía",
+      "carnet": "2021-0020I",
+      "anio_actual": 5,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "5T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 21,
+    "fields": {
+      "nombre": "Marcela Sofía Castillo Torres",
+      "carnet": "2022-0021I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 22,
+    "fields": {
+      "nombre": "Mario Andrés Aguilar López",
+      "carnet": "2022-0022I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": "3M1",
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 23,
+    "fields": {
+      "nombre": "Carmen Elena Soto Díaz",
+      "carnet": "2022-0023I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 24,
+    "fields": {
+      "nombre": "Miguel Ángel Guzmán Ríos",
+      "carnet": "2022-0024I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 25,
+    "fields": {
+      "nombre": "Diana Paola Suárez Ramos",
+      "carnet": "2022-0025I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": "2M1",
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 26,
+    "fields": {
+      "nombre": "Felipe Alberto Méndez Ortiz",
+      "carnet": "2022-0026I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": "2M1",
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 27,
+    "fields": {
+      "nombre": "Gabriela Estefanía Vargas Cruz",
+      "carnet": "2022-0027I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": "1T1",
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 28,
+    "fields": {
+      "nombre": "Iván Ricardo López Marenco",
+      "carnet": "2022-0028I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": "3T1",
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 29,
+    "fields": {
+      "nombre": "Rosa María Rivas Torres",
+      "carnet": "2022-0029I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 30,
+    "fields": {
+      "nombre": "Nicolás Antonio Peralta Hernández",
+      "carnet": "2022-0030I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "4T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 31,
+    "fields": {
+      "nombre": "Vanessa Carolina Chávez Gómez",
+      "carnet": "2022-0031I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 32,
+    "fields": {
+      "nombre": "Francisco Javier Soto Aguilar",
+      "carnet": "2022-0032I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": "2T1",
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 33,
+    "fields": {
+      "nombre": "Alejandra Milena Martínez Lara",
+      "carnet": "2022-0033I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 34,
+    "fields": {
+      "nombre": "Ricardo José Fernández Torres",
+      "carnet": "2022-0034I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 35,
+    "fields": {
+      "nombre": "Juliana Esther Reyes Gómez",
+      "carnet": "2022-0035I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 36,
+    "fields": {
+      "nombre": "Raúl David Ortiz Morales",
+      "carnet": "2022-0036I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": "1T1",
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 37,
+    "fields": {
+      "nombre": "Mónica Alejandra Ponce Galo",
+      "carnet": "2022-0037I",
+      "anio_actual": 4,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 38,
+    "fields": {
+      "nombre": "Esteban Josué Aguilera Ríos",
+      "carnet": "2022-0038I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 39,
+    "fields": {
+      "nombre": "Paola Marcela Ramírez Cano",
+      "carnet": "2022-0039I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 40,
+    "fields": {
+      "nombre": "Javier Alejandro Torres Martínez",
+      "carnet": "2022-0040I",
+      "anio_actual": 4,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "4T2"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 41,
+    "fields": {
+      "nombre": "Carolina del Carmen López Ruiz",
+      "carnet": "2023-0041I",
+      "anio_actual": 3,
+      "tiene_beca": false,
+      "grupo_secundario": "2T1",
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 42,
+    "fields": {
+      "nombre": "David Enrique Pérez Romero",
+      "carnet": "2023-0042I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 43,
+    "fields": {
+      "nombre": "Patricia Andrea Cruz Molina",
+      "carnet": "2023-0043I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": "1T1",
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 44,
+    "fields": {
+      "nombre": "Diego Armando Navarro Soto",
+      "carnet": "2023-0044I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 45,
+    "fields": {
+      "nombre": "Valentina Sofía Ramos Pérez",
+      "carnet": "2023-0045I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": "2T1",
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 46,
+    "fields": {
+      "nombre": "Héctor Manuel Gómez Ruiz",
+      "carnet": "2023-0046I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 47,
+    "fields": {
+      "nombre": "Marisol Elena Castillo Pineda",
+      "carnet": "2023-0047I",
+      "anio_actual": 3,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 48,
+    "fields": {
+      "nombre": "Ricardo Alfonso Herrera Díaz",
+      "carnet": "2023-0048I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 49,
+    "fields": {
+      "nombre": "Melissa Fernanda Torres Ortega",
+      "carnet": "2023-0049I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 50,
+    "fields": {
+      "nombre": "Eduardo José Sánchez López",
+      "carnet": "2023-0050I",
+      "anio_actual": 3,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "3M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 51,
+    "fields": {
+      "nombre": "Cristina Alejandra Ramírez Torres",
+      "carnet": "2023-0051I",
+      "anio_actual": 3,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 52,
+    "fields": {
+      "nombre": "Kevin Andrés Molina Pérez",
+      "carnet": "2023-0052I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 53,
+    "fields": {
+      "nombre": "Natalia Carolina Vargas Ruiz",
+      "carnet": "2023-0053I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 54,
+    "fields": {
+      "nombre": "Julio César Torres Mejía",
+      "carnet": "2023-0054I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 55,
+    "fields": {
+      "nombre": "Fernanda Paola Jiménez Soto",
+      "carnet": "2023-0055I",
+      "anio_actual": 3,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 56,
+    "fields": {
+      "nombre": "Óscar Alejandro García Torres",
+      "carnet": "2023-0056I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 57,
+    "fields": {
+      "nombre": "Lucía Alejandra Pérez Gómez",
+      "carnet": "2023-0057I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": "2T1",
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 58,
+    "fields": {
+      "nombre": "Antonio David Gutiérrez López",
+      "carnet": "2023-0058I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 59,
+    "fields": {
+      "nombre": "Rebeca Isabel López Romero",
+      "carnet": "2023-0059I",
+      "anio_actual": 3,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 60,
+    "fields": {
+      "nombre": "Emilio José Castillo Gómez",
+      "carnet": "2023-0060I",
+      "anio_actual": 3,
+      "tiene_beca": true,
+      "grupo_secundario": "2M1",
+      "grupo_principal": "3T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 61,
+    "fields": {
+      "nombre": "Camila Teresa Pineda Herrera",
+      "carnet": "2024-0061I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": "1T1",
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 62,
+    "fields": {
+      "nombre": "Andrés Felipe López Díaz",
+      "carnet": "2024-0062I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 63,
+    "fields": {
+      "nombre": "Daniela del Carmen Ortiz Torres",
+      "carnet": "2024-0063I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 64,
+    "fields": {
+      "nombre": "Roberto Alejandro Guzmán Ramírez",
+      "carnet": "2024-0064I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 65,
+    "fields": {
+      "nombre": "María José Flores Molina",
+      "carnet": "2024-0065I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 66,
+    "fields": {
+      "nombre": "Mauricio Antonio Herrera Cruz",
+      "carnet": "2024-0066I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 67,
+    "fields": {
+      "nombre": "Valeria Isabel Suárez Torres",
+      "carnet": "2024-0067I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 68,
+    "fields": {
+      "nombre": "Rafael David Torres Pérez",
+      "carnet": "2024-0068I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 69,
+    "fields": {
+      "nombre": "Fabiola Carolina Vargas Soto",
+      "carnet": "2024-0069I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 70,
+    "fields": {
+      "nombre": "Cristian Alberto Ramírez López",
+      "carnet": "2024-0070I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "2M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 71,
+    "fields": {
+      "nombre": "Adriana Sofía Ortega Jiménez",
+      "carnet": "2024-0071I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 72,
+    "fields": {
+      "nombre": "Pablo Andrés Sánchez Molina",
+      "carnet": "2024-0072I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 73,
+    "fields": {
+      "nombre": "Laura Fernanda Ramos Pineda",
+      "carnet": "2024-0073I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": "1M1",
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 74,
+    "fields": {
+      "nombre": "José David García Torres",
+      "carnet": "2024-0074I",
+      "anio_actual": 2,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 75,
+    "fields": {
+      "nombre": "Carla Alejandra Díaz Gómez",
+      "carnet": "2024-0075I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 76,
+    "fields": {
+      "nombre": "Miguel Ángel Pérez Herrera",
+      "carnet": "2024-0076I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": "1T1",
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 77,
+    "fields": {
+      "nombre": "Sandra Carolina López Ruiz",
+      "carnet": "2024-0077I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 78,
+    "fields": {
+      "nombre": "Tomás Alejandro Galo Mejía",
+      "carnet": "2024-0078I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 79,
+    "fields": {
+      "nombre": "Teresa del Pilar Jiménez Cruz",
+      "carnet": "2024-0079I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 80,
+    "fields": {
+      "nombre": "Juan Carlos Ramos Torres",
+      "carnet": "2024-0080I",
+      "anio_actual": 2,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "2T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 81,
+    "fields": {
+      "nombre": "María Fernanda Aguilar Díaz",
+      "carnet": "2025-0081I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 82,
+    "fields": {
+      "nombre": "Julio Enrique Torres López",
+      "carnet": "2025-0082I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 83,
+    "fields": {
+      "nombre": "Gabriela Sofía Méndez Ruiz",
+      "carnet": "2025-0083I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 84,
+    "fields": {
+      "nombre": "Hernán Eduardo Vargas Pineda",
+      "carnet": "2025-0084I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 85,
+    "fields": {
+      "nombre": "Ana Patricia López Torres",
+      "carnet": "2025-0085I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 86,
+    "fields": {
+      "nombre": "Carlos Alberto Jiménez Gómez",
+      "carnet": "2025-0086I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 87,
+    "fields": {
+      "nombre": "Alejandro José Flores Ortiz",
+      "carnet": "2025-0087I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 88,
+    "fields": {
+      "nombre": "Andrea Sofía Torres Martínez",
+      "carnet": "2025-0088I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 89,
+    "fields": {
+      "nombre": "Pedro Miguel Galo Hernández",
+      "carnet": "2025-0089I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 90,
+    "fields": {
+      "nombre": "Marisol Teresa Díaz Ramos",
+      "carnet": "2025-0090I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1M1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 91,
+    "fields": {
+      "nombre": "Diego Alejandro Molina Pérez",
+      "carnet": "2025-0091I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 92,
+    "fields": {
+      "nombre": "Carmen Sofía Aguilar Ruiz",
+      "carnet": "2025-0092I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 93,
+    "fields": {
+      "nombre": "David Antonio López Castillo",
+      "carnet": "2025-0093I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 94,
+    "fields": {
+      "nombre": "Jessica Carolina Ramírez Mejía",
+      "carnet": "2025-0094I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 95,
+    "fields": {
+      "nombre": "Raúl Ernesto Pérez Galo",
+      "carnet": "2025-0095I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 96,
+    "fields": {
+      "nombre": "Karina Isabel Vargas Torres",
+      "carnet": "2025-0096I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 97,
+    "fields": {
+      "nombre": "Felipe Daniel Ramírez López",
+      "carnet": "2025-0097I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 98,
+    "fields": {
+      "nombre": "Fernando Andrés Jiménez Ruiz",
+      "carnet": "2025-0098I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 99,
+    "fields": {
+      "nombre": "Sofía Alejandra Torres Gómez",
+      "carnet": "2025-0099I",
+      "anio_actual": 1,
+      "tiene_beca": false,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.student",
+    "pk": 100,
+    "fields": {
+      "nombre": "Luis Antonio Herrera Díaz",
+      "carnet": "2025-0100I",
+      "anio_actual": 1,
+      "tiene_beca": true,
+      "grupo_secundario": null,
+      "grupo_principal": "1T1"
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 1,
+    "fields": {
+      "nombre": "Matemática Básica",
+      "codigo": "C1001",
+      "anio_correspondiente": 1
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 2,
+    "fields": {
+      "nombre": "Lengua Española I",
+      "codigo": "C1002",
+      "anio_correspondiente": 1
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 3,
+    "fields": {
+      "nombre": "Ciencias Naturales",
+      "codigo": "C1003",
+      "anio_correspondiente": 1
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 4,
+    "fields": {
+      "nombre": "Historia I",
+      "codigo": "C1004",
+      "anio_correspondiente": 1
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 5,
+    "fields": {
+      "nombre": "Educación Física",
+      "codigo": "C1005",
+      "anio_correspondiente": 1
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 6,
+    "fields": {
+      "nombre": "Matemática II",
+      "codigo": "C2006",
+      "anio_correspondiente": 2
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 7,
+    "fields": {
+      "nombre": "Lengua Española II",
+      "codigo": "C2007",
+      "anio_correspondiente": 2
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 8,
+    "fields": {
+      "nombre": "Biología",
+      "codigo": "C2008",
+      "anio_correspondiente": 2
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 9,
+    "fields": {
+      "nombre": "Historia II",
+      "codigo": "C2009",
+      "anio_correspondiente": 2
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 10,
+    "fields": {
+      "nombre": "Computación I",
+      "codigo": "C2010",
+      "anio_correspondiente": 2
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 11,
+    "fields": {
+      "nombre": "Matemática III",
+      "codigo": "C3011",
+      "anio_correspondiente": 3
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 12,
+    "fields": {
+      "nombre": "Literatura",
+      "codigo": "C3012",
+      "anio_correspondiente": 3
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 13,
+    "fields": {
+      "nombre": "Física",
+      "codigo": "C3013",
+      "anio_correspondiente": 3
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 14,
+    "fields": {
+      "nombre": "Programación I",
+      "codigo": "C3014",
+      "anio_correspondiente": 3
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 15,
+    "fields": {
+      "nombre": "Cívica",
+      "codigo": "C3015",
+      "anio_correspondiente": 3
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 16,
+    "fields": {
+      "nombre": "Matemática IV",
+      "codigo": "C4016",
+      "anio_correspondiente": 4
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 17,
+    "fields": {
+      "nombre": "Programación II",
+      "codigo": "C4017",
+      "anio_correspondiente": 4
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 18,
+    "fields": {
+      "nombre": "Química",
+      "codigo": "C4018",
+      "anio_correspondiente": 4
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 19,
+    "fields": {
+      "nombre": "Inglés Técnico",
+      "codigo": "C4019",
+      "anio_correspondiente": 4
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 20,
+    "fields": {
+      "nombre": "Bases de Datos",
+      "codigo": "C4020",
+      "anio_correspondiente": 4
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 21,
+    "fields": {
+      "nombre": "Matemática V",
+      "codigo": "C5021",
+      "anio_correspondiente": 5
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 22,
+    "fields": {
+      "nombre": "Programación Avanzada",
+      "codigo": "C5022",
+      "anio_correspondiente": 5
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 23,
+    "fields": {
+      "nombre": "Redes",
+      "codigo": "C5023",
+      "anio_correspondiente": 5
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 24,
+    "fields": {
+      "nombre": "Proyecto Final",
+      "codigo": "C5024",
+      "anio_correspondiente": 5
+    }
+  },
+  {
+    "model": "students.clase",
+    "pk": 25,
+    "fields": {
+      "nombre": "Ética Profesional",
+      "codigo": "C5025",
+      "anio_correspondiente": 5
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 1,
+    "fields": {
+      "student": 1,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 2,
+    "fields": {
+      "student": 1,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 3,
+    "fields": {
+      "student": 1,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 4,
+    "fields": {
+      "student": 1,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 5,
+    "fields": {
+      "student": 1,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 6,
+    "fields": {
+      "student": 2,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 7,
+    "fields": {
+      "student": 2,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 8,
+    "fields": {
+      "student": 2,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 9,
+    "fields": {
+      "student": 2,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 10,
+    "fields": {
+      "student": 2,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 11,
+    "fields": {
+      "student": 3,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 12,
+    "fields": {
+      "student": 3,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 13,
+    "fields": {
+      "student": 3,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 14,
+    "fields": {
+      "student": 3,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 15,
+    "fields": {
+      "student": 3,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 16,
+    "fields": {
+      "student": 4,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 17,
+    "fields": {
+      "student": 4,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 18,
+    "fields": {
+      "student": 4,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 19,
+    "fields": {
+      "student": 4,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 20,
+    "fields": {
+      "student": 4,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 21,
+    "fields": {
+      "student": 5,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 22,
+    "fields": {
+      "student": 5,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 23,
+    "fields": {
+      "student": 5,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 24,
+    "fields": {
+      "student": 5,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 25,
+    "fields": {
+      "student": 5,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 26,
+    "fields": {
+      "student": 6,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 27,
+    "fields": {
+      "student": 6,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 28,
+    "fields": {
+      "student": 6,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 29,
+    "fields": {
+      "student": 6,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 30,
+    "fields": {
+      "student": 6,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 31,
+    "fields": {
+      "student": 7,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 32,
+    "fields": {
+      "student": 7,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 33,
+    "fields": {
+      "student": 7,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 34,
+    "fields": {
+      "student": 7,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 35,
+    "fields": {
+      "student": 7,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 36,
+    "fields": {
+      "student": 8,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 37,
+    "fields": {
+      "student": 8,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 38,
+    "fields": {
+      "student": 8,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 39,
+    "fields": {
+      "student": 8,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 40,
+    "fields": {
+      "student": 8,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 41,
+    "fields": {
+      "student": 9,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 42,
+    "fields": {
+      "student": 9,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 43,
+    "fields": {
+      "student": 9,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 44,
+    "fields": {
+      "student": 9,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 45,
+    "fields": {
+      "student": 9,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 46,
+    "fields": {
+      "student": 10,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 47,
+    "fields": {
+      "student": 10,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 48,
+    "fields": {
+      "student": 10,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 49,
+    "fields": {
+      "student": 10,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 50,
+    "fields": {
+      "student": 10,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 51,
+    "fields": {
+      "student": 11,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 52,
+    "fields": {
+      "student": 11,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 53,
+    "fields": {
+      "student": 11,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 54,
+    "fields": {
+      "student": 11,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 55,
+    "fields": {
+      "student": 11,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 56,
+    "fields": {
+      "student": 12,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 57,
+    "fields": {
+      "student": 12,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 58,
+    "fields": {
+      "student": 12,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 59,
+    "fields": {
+      "student": 12,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 60,
+    "fields": {
+      "student": 12,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 61,
+    "fields": {
+      "student": 13,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 62,
+    "fields": {
+      "student": 13,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 63,
+    "fields": {
+      "student": 13,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 64,
+    "fields": {
+      "student": 13,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 65,
+    "fields": {
+      "student": 13,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 66,
+    "fields": {
+      "student": 14,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 67,
+    "fields": {
+      "student": 14,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 68,
+    "fields": {
+      "student": 14,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 69,
+    "fields": {
+      "student": 14,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 70,
+    "fields": {
+      "student": 14,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 71,
+    "fields": {
+      "student": 15,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 72,
+    "fields": {
+      "student": 15,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 73,
+    "fields": {
+      "student": 15,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 74,
+    "fields": {
+      "student": 15,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 75,
+    "fields": {
+      "student": 15,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 76,
+    "fields": {
+      "student": 16,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 77,
+    "fields": {
+      "student": 16,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 78,
+    "fields": {
+      "student": 16,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 79,
+    "fields": {
+      "student": 16,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 80,
+    "fields": {
+      "student": 16,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 81,
+    "fields": {
+      "student": 17,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 82,
+    "fields": {
+      "student": 17,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 83,
+    "fields": {
+      "student": 17,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 84,
+    "fields": {
+      "student": 17,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 85,
+    "fields": {
+      "student": 17,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 86,
+    "fields": {
+      "student": 18,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 87,
+    "fields": {
+      "student": 18,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 88,
+    "fields": {
+      "student": 18,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 89,
+    "fields": {
+      "student": 18,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 90,
+    "fields": {
+      "student": 18,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 91,
+    "fields": {
+      "student": 19,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 92,
+    "fields": {
+      "student": 19,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 93,
+    "fields": {
+      "student": 19,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 94,
+    "fields": {
+      "student": 19,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 95,
+    "fields": {
+      "student": 19,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 96,
+    "fields": {
+      "student": 20,
+      "clase": 21,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 97,
+    "fields": {
+      "student": 20,
+      "clase": 22,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 98,
+    "fields": {
+      "student": 20,
+      "clase": 23,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 99,
+    "fields": {
+      "student": 20,
+      "clase": 24,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 100,
+    "fields": {
+      "student": 20,
+      "clase": 25,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 101,
+    "fields": {
+      "student": 21,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 102,
+    "fields": {
+      "student": 21,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 103,
+    "fields": {
+      "student": 21,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 104,
+    "fields": {
+      "student": 21,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 105,
+    "fields": {
+      "student": 21,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 106,
+    "fields": {
+      "student": 22,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 107,
+    "fields": {
+      "student": 22,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 108,
+    "fields": {
+      "student": 22,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 109,
+    "fields": {
+      "student": 22,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 110,
+    "fields": {
+      "student": 22,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 111,
+    "fields": {
+      "student": 23,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 112,
+    "fields": {
+      "student": 23,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 113,
+    "fields": {
+      "student": 23,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 114,
+    "fields": {
+      "student": 23,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 115,
+    "fields": {
+      "student": 23,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 116,
+    "fields": {
+      "student": 24,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 117,
+    "fields": {
+      "student": 24,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 118,
+    "fields": {
+      "student": 24,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 119,
+    "fields": {
+      "student": 24,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 120,
+    "fields": {
+      "student": 24,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 121,
+    "fields": {
+      "student": 25,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 122,
+    "fields": {
+      "student": 25,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 123,
+    "fields": {
+      "student": 25,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 124,
+    "fields": {
+      "student": 25,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 125,
+    "fields": {
+      "student": 25,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 126,
+    "fields": {
+      "student": 26,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 127,
+    "fields": {
+      "student": 26,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 128,
+    "fields": {
+      "student": 26,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 129,
+    "fields": {
+      "student": 26,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 130,
+    "fields": {
+      "student": 26,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 131,
+    "fields": {
+      "student": 27,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 132,
+    "fields": {
+      "student": 27,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 133,
+    "fields": {
+      "student": 27,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 134,
+    "fields": {
+      "student": 27,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 135,
+    "fields": {
+      "student": 27,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 136,
+    "fields": {
+      "student": 28,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 137,
+    "fields": {
+      "student": 28,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 138,
+    "fields": {
+      "student": 28,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 139,
+    "fields": {
+      "student": 28,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 140,
+    "fields": {
+      "student": 28,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 141,
+    "fields": {
+      "student": 29,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 142,
+    "fields": {
+      "student": 29,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 143,
+    "fields": {
+      "student": 29,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 144,
+    "fields": {
+      "student": 29,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 145,
+    "fields": {
+      "student": 29,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 146,
+    "fields": {
+      "student": 30,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 147,
+    "fields": {
+      "student": 30,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 148,
+    "fields": {
+      "student": 30,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 149,
+    "fields": {
+      "student": 30,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 150,
+    "fields": {
+      "student": 30,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 151,
+    "fields": {
+      "student": 31,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 152,
+    "fields": {
+      "student": 31,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 153,
+    "fields": {
+      "student": 31,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 154,
+    "fields": {
+      "student": 31,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 155,
+    "fields": {
+      "student": 31,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 156,
+    "fields": {
+      "student": 32,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 157,
+    "fields": {
+      "student": 32,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 158,
+    "fields": {
+      "student": 32,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 159,
+    "fields": {
+      "student": 32,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 160,
+    "fields": {
+      "student": 32,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 161,
+    "fields": {
+      "student": 33,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 162,
+    "fields": {
+      "student": 33,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 163,
+    "fields": {
+      "student": 33,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 164,
+    "fields": {
+      "student": 33,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 165,
+    "fields": {
+      "student": 33,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 166,
+    "fields": {
+      "student": 34,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 167,
+    "fields": {
+      "student": 34,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 168,
+    "fields": {
+      "student": 34,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 169,
+    "fields": {
+      "student": 34,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 170,
+    "fields": {
+      "student": 34,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 171,
+    "fields": {
+      "student": 35,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 172,
+    "fields": {
+      "student": 35,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 173,
+    "fields": {
+      "student": 35,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 174,
+    "fields": {
+      "student": 35,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 175,
+    "fields": {
+      "student": 35,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 176,
+    "fields": {
+      "student": 36,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 177,
+    "fields": {
+      "student": 36,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 178,
+    "fields": {
+      "student": 36,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 179,
+    "fields": {
+      "student": 36,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 180,
+    "fields": {
+      "student": 36,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 181,
+    "fields": {
+      "student": 37,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 182,
+    "fields": {
+      "student": 37,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 183,
+    "fields": {
+      "student": 37,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 184,
+    "fields": {
+      "student": 37,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 185,
+    "fields": {
+      "student": 37,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 186,
+    "fields": {
+      "student": 38,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 187,
+    "fields": {
+      "student": 38,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 188,
+    "fields": {
+      "student": 38,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 189,
+    "fields": {
+      "student": 38,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 190,
+    "fields": {
+      "student": 38,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 191,
+    "fields": {
+      "student": 39,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 192,
+    "fields": {
+      "student": 39,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 193,
+    "fields": {
+      "student": 39,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 194,
+    "fields": {
+      "student": 39,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 195,
+    "fields": {
+      "student": 39,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 196,
+    "fields": {
+      "student": 40,
+      "clase": 16,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 197,
+    "fields": {
+      "student": 40,
+      "clase": 17,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 198,
+    "fields": {
+      "student": 40,
+      "clase": 18,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 199,
+    "fields": {
+      "student": 40,
+      "clase": 19,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 200,
+    "fields": {
+      "student": 40,
+      "clase": 20,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 201,
+    "fields": {
+      "student": 41,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 202,
+    "fields": {
+      "student": 41,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 203,
+    "fields": {
+      "student": 41,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 204,
+    "fields": {
+      "student": 41,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 205,
+    "fields": {
+      "student": 41,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 206,
+    "fields": {
+      "student": 42,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 207,
+    "fields": {
+      "student": 42,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 208,
+    "fields": {
+      "student": 42,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 209,
+    "fields": {
+      "student": 42,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 210,
+    "fields": {
+      "student": 42,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 211,
+    "fields": {
+      "student": 43,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 212,
+    "fields": {
+      "student": 43,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 213,
+    "fields": {
+      "student": 43,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 214,
+    "fields": {
+      "student": 43,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 215,
+    "fields": {
+      "student": 43,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 216,
+    "fields": {
+      "student": 44,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 217,
+    "fields": {
+      "student": 44,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 218,
+    "fields": {
+      "student": 44,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 219,
+    "fields": {
+      "student": 44,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 220,
+    "fields": {
+      "student": 44,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 221,
+    "fields": {
+      "student": 45,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 222,
+    "fields": {
+      "student": 45,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 223,
+    "fields": {
+      "student": 45,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 224,
+    "fields": {
+      "student": 45,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 225,
+    "fields": {
+      "student": 45,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 226,
+    "fields": {
+      "student": 46,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 227,
+    "fields": {
+      "student": 46,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 228,
+    "fields": {
+      "student": 46,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 229,
+    "fields": {
+      "student": 46,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 230,
+    "fields": {
+      "student": 46,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 231,
+    "fields": {
+      "student": 47,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 232,
+    "fields": {
+      "student": 47,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 233,
+    "fields": {
+      "student": 47,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 234,
+    "fields": {
+      "student": 47,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 235,
+    "fields": {
+      "student": 47,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 236,
+    "fields": {
+      "student": 48,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 237,
+    "fields": {
+      "student": 48,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 238,
+    "fields": {
+      "student": 48,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 239,
+    "fields": {
+      "student": 48,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 240,
+    "fields": {
+      "student": 48,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 241,
+    "fields": {
+      "student": 49,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 242,
+    "fields": {
+      "student": 49,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 243,
+    "fields": {
+      "student": 49,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 244,
+    "fields": {
+      "student": 49,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 245,
+    "fields": {
+      "student": 49,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 246,
+    "fields": {
+      "student": 50,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 247,
+    "fields": {
+      "student": 50,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 248,
+    "fields": {
+      "student": 50,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 249,
+    "fields": {
+      "student": 50,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 250,
+    "fields": {
+      "student": 50,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 251,
+    "fields": {
+      "student": 51,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 252,
+    "fields": {
+      "student": 51,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 253,
+    "fields": {
+      "student": 51,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 254,
+    "fields": {
+      "student": 51,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 255,
+    "fields": {
+      "student": 51,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 256,
+    "fields": {
+      "student": 52,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 257,
+    "fields": {
+      "student": 52,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 258,
+    "fields": {
+      "student": 52,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 259,
+    "fields": {
+      "student": 52,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 260,
+    "fields": {
+      "student": 52,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 261,
+    "fields": {
+      "student": 53,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 262,
+    "fields": {
+      "student": 53,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 263,
+    "fields": {
+      "student": 53,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 264,
+    "fields": {
+      "student": 53,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 265,
+    "fields": {
+      "student": 53,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 266,
+    "fields": {
+      "student": 54,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 267,
+    "fields": {
+      "student": 54,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 268,
+    "fields": {
+      "student": 54,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 269,
+    "fields": {
+      "student": 54,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 270,
+    "fields": {
+      "student": 54,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 271,
+    "fields": {
+      "student": 55,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 272,
+    "fields": {
+      "student": 55,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 273,
+    "fields": {
+      "student": 55,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 274,
+    "fields": {
+      "student": 55,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 275,
+    "fields": {
+      "student": 55,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 276,
+    "fields": {
+      "student": 56,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 277,
+    "fields": {
+      "student": 56,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 278,
+    "fields": {
+      "student": 56,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 279,
+    "fields": {
+      "student": 56,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 280,
+    "fields": {
+      "student": 56,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 281,
+    "fields": {
+      "student": 57,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 282,
+    "fields": {
+      "student": 57,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 283,
+    "fields": {
+      "student": 57,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 284,
+    "fields": {
+      "student": 57,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 285,
+    "fields": {
+      "student": 57,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 286,
+    "fields": {
+      "student": 58,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 287,
+    "fields": {
+      "student": 58,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 288,
+    "fields": {
+      "student": 58,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 289,
+    "fields": {
+      "student": 58,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 290,
+    "fields": {
+      "student": 58,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 291,
+    "fields": {
+      "student": 59,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 292,
+    "fields": {
+      "student": 59,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 293,
+    "fields": {
+      "student": 59,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 294,
+    "fields": {
+      "student": 59,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 295,
+    "fields": {
+      "student": 59,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 296,
+    "fields": {
+      "student": 60,
+      "clase": 11,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 297,
+    "fields": {
+      "student": 60,
+      "clase": 12,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 298,
+    "fields": {
+      "student": 60,
+      "clase": 13,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 299,
+    "fields": {
+      "student": 60,
+      "clase": 14,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 300,
+    "fields": {
+      "student": 60,
+      "clase": 15,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 301,
+    "fields": {
+      "student": 61,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 302,
+    "fields": {
+      "student": 61,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 303,
+    "fields": {
+      "student": 61,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 304,
+    "fields": {
+      "student": 61,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 305,
+    "fields": {
+      "student": 61,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 306,
+    "fields": {
+      "student": 62,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 307,
+    "fields": {
+      "student": 62,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 308,
+    "fields": {
+      "student": 62,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 309,
+    "fields": {
+      "student": 62,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 310,
+    "fields": {
+      "student": 62,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 311,
+    "fields": {
+      "student": 63,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 312,
+    "fields": {
+      "student": 63,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 313,
+    "fields": {
+      "student": 63,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 314,
+    "fields": {
+      "student": 63,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 315,
+    "fields": {
+      "student": 63,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 316,
+    "fields": {
+      "student": 64,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 317,
+    "fields": {
+      "student": 64,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 318,
+    "fields": {
+      "student": 64,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 319,
+    "fields": {
+      "student": 64,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 320,
+    "fields": {
+      "student": 64,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 321,
+    "fields": {
+      "student": 65,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 322,
+    "fields": {
+      "student": 65,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 323,
+    "fields": {
+      "student": 65,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 324,
+    "fields": {
+      "student": 65,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 325,
+    "fields": {
+      "student": 65,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 326,
+    "fields": {
+      "student": 66,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 327,
+    "fields": {
+      "student": 66,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 328,
+    "fields": {
+      "student": 66,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 329,
+    "fields": {
+      "student": 66,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 330,
+    "fields": {
+      "student": 66,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 331,
+    "fields": {
+      "student": 67,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 332,
+    "fields": {
+      "student": 67,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 333,
+    "fields": {
+      "student": 67,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 334,
+    "fields": {
+      "student": 67,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 335,
+    "fields": {
+      "student": 67,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 336,
+    "fields": {
+      "student": 68,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 337,
+    "fields": {
+      "student": 68,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 338,
+    "fields": {
+      "student": 68,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 339,
+    "fields": {
+      "student": 68,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 340,
+    "fields": {
+      "student": 68,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 341,
+    "fields": {
+      "student": 69,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 342,
+    "fields": {
+      "student": 69,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 343,
+    "fields": {
+      "student": 69,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 344,
+    "fields": {
+      "student": 69,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 345,
+    "fields": {
+      "student": 69,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 346,
+    "fields": {
+      "student": 70,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 347,
+    "fields": {
+      "student": 70,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 348,
+    "fields": {
+      "student": 70,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 349,
+    "fields": {
+      "student": 70,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 350,
+    "fields": {
+      "student": 70,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 351,
+    "fields": {
+      "student": 71,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 352,
+    "fields": {
+      "student": 71,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 353,
+    "fields": {
+      "student": 71,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 354,
+    "fields": {
+      "student": 71,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 355,
+    "fields": {
+      "student": 71,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 356,
+    "fields": {
+      "student": 72,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 357,
+    "fields": {
+      "student": 72,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 358,
+    "fields": {
+      "student": 72,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 359,
+    "fields": {
+      "student": 72,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 360,
+    "fields": {
+      "student": 72,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 361,
+    "fields": {
+      "student": 73,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 362,
+    "fields": {
+      "student": 73,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 363,
+    "fields": {
+      "student": 73,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 364,
+    "fields": {
+      "student": 73,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 365,
+    "fields": {
+      "student": 73,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 366,
+    "fields": {
+      "student": 74,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 367,
+    "fields": {
+      "student": 74,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 368,
+    "fields": {
+      "student": 74,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 369,
+    "fields": {
+      "student": 74,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 370,
+    "fields": {
+      "student": 74,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 371,
+    "fields": {
+      "student": 75,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 372,
+    "fields": {
+      "student": 75,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 373,
+    "fields": {
+      "student": 75,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 374,
+    "fields": {
+      "student": 75,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 375,
+    "fields": {
+      "student": 75,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 376,
+    "fields": {
+      "student": 76,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 377,
+    "fields": {
+      "student": 76,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 378,
+    "fields": {
+      "student": 76,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 379,
+    "fields": {
+      "student": 76,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 380,
+    "fields": {
+      "student": 76,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 381,
+    "fields": {
+      "student": 77,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 382,
+    "fields": {
+      "student": 77,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 383,
+    "fields": {
+      "student": 77,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 384,
+    "fields": {
+      "student": 77,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 385,
+    "fields": {
+      "student": 77,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 386,
+    "fields": {
+      "student": 78,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 387,
+    "fields": {
+      "student": 78,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 388,
+    "fields": {
+      "student": 78,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 389,
+    "fields": {
+      "student": 78,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 390,
+    "fields": {
+      "student": 78,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 391,
+    "fields": {
+      "student": 79,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 392,
+    "fields": {
+      "student": 79,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 393,
+    "fields": {
+      "student": 79,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 394,
+    "fields": {
+      "student": 79,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 395,
+    "fields": {
+      "student": 79,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 396,
+    "fields": {
+      "student": 80,
+      "clase": 6,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 397,
+    "fields": {
+      "student": 80,
+      "clase": 7,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 398,
+    "fields": {
+      "student": 80,
+      "clase": 8,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 399,
+    "fields": {
+      "student": 80,
+      "clase": 9,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 400,
+    "fields": {
+      "student": 80,
+      "clase": 10,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 401,
+    "fields": {
+      "student": 81,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 402,
+    "fields": {
+      "student": 81,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 403,
+    "fields": {
+      "student": 81,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 404,
+    "fields": {
+      "student": 81,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 405,
+    "fields": {
+      "student": 81,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 406,
+    "fields": {
+      "student": 82,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 407,
+    "fields": {
+      "student": 82,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 408,
+    "fields": {
+      "student": 82,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 409,
+    "fields": {
+      "student": 82,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 410,
+    "fields": {
+      "student": 82,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 411,
+    "fields": {
+      "student": 83,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 412,
+    "fields": {
+      "student": 83,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 413,
+    "fields": {
+      "student": 83,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 414,
+    "fields": {
+      "student": 83,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 415,
+    "fields": {
+      "student": 83,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 416,
+    "fields": {
+      "student": 84,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 417,
+    "fields": {
+      "student": 84,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 418,
+    "fields": {
+      "student": 84,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 419,
+    "fields": {
+      "student": 84,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 420,
+    "fields": {
+      "student": 84,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 421,
+    "fields": {
+      "student": 85,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 422,
+    "fields": {
+      "student": 85,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 423,
+    "fields": {
+      "student": 85,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 424,
+    "fields": {
+      "student": 85,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 425,
+    "fields": {
+      "student": 85,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 426,
+    "fields": {
+      "student": 86,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 427,
+    "fields": {
+      "student": 86,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 428,
+    "fields": {
+      "student": 86,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 429,
+    "fields": {
+      "student": 86,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 430,
+    "fields": {
+      "student": 86,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 431,
+    "fields": {
+      "student": 87,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 432,
+    "fields": {
+      "student": 87,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 433,
+    "fields": {
+      "student": 87,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 434,
+    "fields": {
+      "student": 87,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 435,
+    "fields": {
+      "student": 87,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 436,
+    "fields": {
+      "student": 88,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 437,
+    "fields": {
+      "student": 88,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 438,
+    "fields": {
+      "student": 88,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 439,
+    "fields": {
+      "student": 88,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 440,
+    "fields": {
+      "student": 88,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 441,
+    "fields": {
+      "student": 89,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 442,
+    "fields": {
+      "student": 89,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 443,
+    "fields": {
+      "student": 89,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 444,
+    "fields": {
+      "student": 89,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 445,
+    "fields": {
+      "student": 89,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 446,
+    "fields": {
+      "student": 90,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 447,
+    "fields": {
+      "student": 90,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 448,
+    "fields": {
+      "student": 90,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 449,
+    "fields": {
+      "student": 90,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 450,
+    "fields": {
+      "student": 90,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 451,
+    "fields": {
+      "student": 91,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 452,
+    "fields": {
+      "student": 91,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 453,
+    "fields": {
+      "student": 91,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 454,
+    "fields": {
+      "student": 91,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 455,
+    "fields": {
+      "student": 91,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 456,
+    "fields": {
+      "student": 92,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 457,
+    "fields": {
+      "student": 92,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 458,
+    "fields": {
+      "student": 92,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 459,
+    "fields": {
+      "student": 92,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 460,
+    "fields": {
+      "student": 92,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 461,
+    "fields": {
+      "student": 93,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 462,
+    "fields": {
+      "student": 93,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 463,
+    "fields": {
+      "student": 93,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 464,
+    "fields": {
+      "student": 93,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 465,
+    "fields": {
+      "student": 93,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 466,
+    "fields": {
+      "student": 94,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 467,
+    "fields": {
+      "student": 94,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 468,
+    "fields": {
+      "student": 94,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 469,
+    "fields": {
+      "student": 94,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 470,
+    "fields": {
+      "student": 94,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 471,
+    "fields": {
+      "student": 95,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 472,
+    "fields": {
+      "student": 95,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 473,
+    "fields": {
+      "student": 95,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 474,
+    "fields": {
+      "student": 95,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 475,
+    "fields": {
+      "student": 95,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 476,
+    "fields": {
+      "student": 96,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 477,
+    "fields": {
+      "student": 96,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 478,
+    "fields": {
+      "student": 96,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 479,
+    "fields": {
+      "student": 96,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 480,
+    "fields": {
+      "student": 96,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 481,
+    "fields": {
+      "student": 97,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 482,
+    "fields": {
+      "student": 97,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 483,
+    "fields": {
+      "student": 97,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 484,
+    "fields": {
+      "student": 97,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 485,
+    "fields": {
+      "student": 97,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 486,
+    "fields": {
+      "student": 98,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 487,
+    "fields": {
+      "student": 98,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 488,
+    "fields": {
+      "student": 98,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 489,
+    "fields": {
+      "student": 98,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 490,
+    "fields": {
+      "student": 98,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 491,
+    "fields": {
+      "student": 99,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 492,
+    "fields": {
+      "student": 99,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 493,
+    "fields": {
+      "student": 99,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 494,
+    "fields": {
+      "student": 99,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 495,
+    "fields": {
+      "student": 99,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 496,
+    "fields": {
+      "student": 100,
+      "clase": 1,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 497,
+    "fields": {
+      "student": 100,
+      "clase": 2,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 498,
+    "fields": {
+      "student": 100,
+      "clase": 3,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 499,
+    "fields": {
+      "student": 100,
+      "clase": 4,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 500,
+    "fields": {
+      "student": 100,
+      "clase": 5,
+      "periodo": "I Semestre 2025",
+      "activo": true
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 501,
+    "fields": {
+      "student": 72,
+      "clase": 1,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 502,
+    "fields": {
+      "student": 72,
+      "clase": 2,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 503,
+    "fields": {
+      "student": 45,
+      "clase": 6,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 504,
+    "fields": {
+      "student": 45,
+      "clase": 7,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 505,
+    "fields": {
+      "student": 19,
+      "clase": 16,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 506,
+    "fields": {
+      "student": 19,
+      "clase": 17,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 507,
+    "fields": {
+      "student": 20,
+      "clase": 16,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 508,
+    "fields": {
+      "student": 20,
+      "clase": 17,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 509,
+    "fields": {
+      "student": 29,
+      "clase": 11,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 510,
+    "fields": {
+      "student": 29,
+      "clase": 12,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 511,
+    "fields": {
+      "student": 8,
+      "clase": 16,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 512,
+    "fields": {
+      "student": 8,
+      "clase": 17,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 513,
+    "fields": {
+      "student": 68,
+      "clase": 1,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 514,
+    "fields": {
+      "student": 68,
+      "clase": 2,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 515,
+    "fields": {
+      "student": 4,
+      "clase": 16,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 516,
+    "fields": {
+      "student": 4,
+      "clase": 17,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 517,
+    "fields": {
+      "student": 36,
+      "clase": 11,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 518,
+    "fields": {
+      "student": 36,
+      "clase": 12,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 519,
+    "fields": {
+      "student": 66,
+      "clase": 1,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 520,
+    "fields": {
+      "student": 66,
+      "clase": 2,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 521,
+    "fields": {
+      "student": 22,
+      "clase": 11,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 522,
+    "fields": {
+      "student": 22,
+      "clase": 12,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 523,
+    "fields": {
+      "student": 23,
+      "clase": 11,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 524,
+    "fields": {
+      "student": 23,
+      "clase": 12,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 525,
+    "fields": {
+      "student": 43,
+      "clase": 6,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 526,
+    "fields": {
+      "student": 43,
+      "clase": 7,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 527,
+    "fields": {
+      "student": 33,
+      "clase": 11,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 528,
+    "fields": {
+      "student": 33,
+      "clase": 12,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 529,
+    "fields": {
+      "student": 42,
+      "clase": 6,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 530,
+    "fields": {
+      "student": 42,
+      "clase": 7,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 531,
+    "fields": {
+      "student": 16,
+      "clase": 16,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 532,
+    "fields": {
+      "student": 16,
+      "clase": 17,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 533,
+    "fields": {
+      "student": 80,
+      "clase": 1,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  },
+  {
+    "model": "students.enrollment",
+    "pk": 534,
+    "fields": {
+      "student": 80,
+      "clase": 2,
+      "periodo": "I Semestre 2024",
+      "activo": false
+    }
+  }
+]

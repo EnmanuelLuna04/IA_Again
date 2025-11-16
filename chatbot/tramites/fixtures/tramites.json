@@ -1,0 +1,105 @@
+[
+  {
+    "model": "tramites.tramite",
+    "pk": 1,
+    "fields": {
+      "categoria": 5,
+      "titulo": "Requisitos para trámite de título universitario",
+      "slug": "tramite-titulo-universitario",
+      "descripcion": "Documentos y pagos necesarios para gestionar la impresión y publicación del título universitario.",
+      "requisitos": [
+        "3 fotos tamaño 5×7 cm, a color en papel mate sin borde, con traje formal (camisa de centro blanca y saco/blazer color oscuro), tomada de frente; sin aretes grandes, sin lentes, sin piercing. Varones con corbata.",
+        "Solvencia de Biblioteca (válida por 24 horas).",
+        "Original y fotocopia a color de cédula de identidad, AMPLIADA AL 200%. Ambas caras impresas en la misma página.",
+        "Original y fotocopia a color del Diploma de Bachiller emitido por el MINED, con todas las firmas y sellos correspondientes.",
+        "Efectuar en cualquier banco del país el pago a nombre de \"La Gaceta\" por C$140.00 en concepto de publicación de título; referencia del pago con nombre del graduando.",
+        "Constancia emitida por el centro de estudio a MINED que contenga: Nombre, código de estudiante, año de egreso de la secundaria y el turno (para bachilleres del 2014 en adelante).",
+        "Hoja de actualización de datos.",
+        "Efectuar pago en cualquiera de las siguientes cuentas a nombre de ARCA S.A en concepto de impresión de título por C$1,150.00: BDF #1003818985, LAFISE #300203752, BANPRO #1001140002024.",
+        "La entrega de requisitos es personal en el área de Registro Académico."
+      ],
+      "activo": true,
+      "created_at": "2025-10-29T00:00:00Z",
+      "updated_at": "2025-10-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "tramites.tramite",
+    "pk": 2,
+    "fields": {
+      "categoria": 5,
+      "titulo": "Procedimiento para realizar Protocolo Monográfico",
+      "slug": "protocolo-monografico",
+      "descripcion": "Presentar en Culminación de Estudios de la Dirección del Área de Conocimiento los documentos requeridos.",
+      "requisitos": [
+        "Carta de solicitud dirigida a la Directora del Área de Conocimiento y propuesta de Tutor.",
+        "Copia de Carta de egresado o Constancia del 90% de asignaturas aprobadas (incluyendo Metodología de la Investigación).",
+        "Copia del Certificado de notas (emitido por Secretaría o Registro Académico).",
+        "Copia de hoja de matrícula del semestre actual.",
+        "Carta del Tutor que avala haber revisado el protocolo.",
+        "Protocolo del trabajo monográfico (encuadernado/encolochado)."
+      ],
+      "activo": true,
+      "created_at": "2025-10-29T00:00:00Z",
+      "updated_at": "2025-10-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "tramites.tramite",
+    "pk": 3,
+    "fields": {
+      "categoria": 5,
+      "titulo": "Procedimiento para realizar Defensa Monográfica",
+      "slug": "defensa-monografica",
+      "descripcion": "Documentos para solicitar y sustentar la defensa del trabajo monográfico.",
+      "requisitos": [
+        "Carta de solicitud de defensa dirigida a la Directora.",
+        "Tres ejemplares del trabajo monográfico empastados, cada uno con el CD del contenido etiquetado y pegado en la parte interna de la pasta final."
+      ],
+      "activo": true,
+      "created_at": "2025-10-29T00:00:00Z",
+      "updated_at": "2025-10-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "tramites.tramite",
+    "pk": 4,
+    "fields": {
+      "categoria": 5,
+      "titulo": "Procedimiento para realizar Predefensa Monográfica",
+      "slug": "predefensa-monografica",
+      "descripcion": "La predefensa es de retroalimentación. Documentos requeridos.",
+      "requisitos": [
+        "Carta de solicitud de predefensa dirigida a la Directora.",
+        "Copia de Carta de egresado.",
+        "Copia del Certificado de notas (de Secretaría Académica o Registro Académico).",
+        "Hoja de matrícula del semestre.",
+        "Carta del Tutor avalando cumplimiento de normativa y que el trabajo está listo para predefensa.",
+        "Copia de Carta de aprobación del protocolo.",
+        "Tres ejemplares del trabajo monográfico (encolochados)."
+      ],
+      "activo": true,
+      "created_at": "2025-10-29T00:00:00Z",
+      "updated_at": "2025-10-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "tramites.tramite",
+    "pk": 5,
+    "fields": {
+      "categoria": 5,
+      "titulo": "Proceso para darse de baja de la universidad",
+      "slug": "baja-universidad",
+      "descripcion": "Pasos para gestionar la baja académica.",
+      "requisitos": [
+        "Presentarse a Registro Académico.",
+        "Solicitar el Certificado de notas.",
+        "Realizar el pago del proceso de baja por C$140.00.",
+        "Redactar carta explicando el motivo de retiro de la carrera."
+      ],
+      "activo": true,
+      "created_at": "2025-10-29T00:00:00Z",
+      "updated_at": "2025-10-29T00:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "model": "becas.beca",
+    "pk": 1,
+    "fields": {
+      "categoria": 1,
+      "tipo": "Beca alimenticia",
+      "descripcion": "Apoyo de alimentación para estudiantes con necesidad.",
+      "requisitos": "- Constancia de notas del semestre anterior, en el caso de ser nuevo ingreso presentar notas de 4to y 5° año\n- Hoja del semestre vigente\n- Fotocopia de Carnet y Cédula\n- Carta de intención dirigida a la Comisión de Becas del Área de Conocimiento (explicar motivos, carga académica; aclarar si tienen laboratorios o asignaturas en turnos contrarios)\n- Llenar formato en línea\n- Promedio mínimo 70%",
+      "activa": true
+    }
+  },
+  {
+    "model": "becas.beca",
+    "pk": 2,
+    "fields": {
+      "categoria": 1,
+      "tipo": "Beca monetaria",
+      "descripcion": "Apoyo económico mensual para estudiantes.",
+      "requisitos": "- Constancia de notas del semestre anterior, en el caso de ser nuevo ingreso presentar notas de 4to y 5° año\n- Hoja del semestre vigente\n- Fotocopia de Carnet y Cédula\n- Carta dirigida al copresidente Daniel Ortega y copresidenta Rosario Murillo",
+      "activa": true
+    }
+  },
+  {
+    "model": "becas.beca",
+    "pk": 3,
+    "fields": {
+      "categoria": 1,
+      "tipo": "Beca interna",
+      "descripcion": "Beneficio institucional según normativa vigente.",
+      "requisitos": "- Llenar y entregar el formulario de solicitud de beca en línea o de forma presencial, según sea el caso\n- Carta de solicitud de beca dirigida a la Comisión de Becas del Área de Conocimiento o Centro Universitario Regional (CUR)\n- Hoja de matrícula del semestre vigente\n- Fotocopia de cédula de identidad nicaragüense vigente (o constancia en su defecto); estudiantes extranjeros: cédula emitida por el CSE\n- Fotocopia de carné estudiantil o, en caso de pérdida, hoja de matrícula con fotografía, sello y firma de la Secretaría del Área o CUR\n- Certificado de conducta vigente emitido por la Policía Nacional (excepto menores de 16 años)\n- Certificado de salud vigente emitido por autoridad del MINSA\n- Para reingreso: además de lo anterior, carta del jefe de departamento con evaluación del currículo por competencias del año precedente",
+      "activa": true
+    }
+  }
+]
