@@ -9,8 +9,12 @@ import json, re
 FIXTURE_CANDIDATES = [
     Path(settings.BASE_DIR) / "becas" / "fixtures" / "becas.json",
 ]
+TRAMITES_FIXTURE = Path(settings.BASE_DIR) / "tramites" / "fixtures" / "tramites.json"
+
+
 STUDENTS_FIXTURE = Path(settings.BASE_DIR) / "students" / "fixtures" / "students.json"
 ASIG_FIXTURE     = Path(settings.BASE_DIR) / "becas" / "fixtures" / "asignaciones_becas.json"
+
 
 @lru_cache
 def _load_becas_raw():
@@ -177,3 +181,201 @@ def tiene_beca(carnet: str) -> bool:
 def detalle_beca(carnet: str):
     asg = buscar_asignacion_por_carnet(carnet)
     return resumen_asignacion(asg) if asg else None
+
+#Tramites
+@lru_cache
+def _load_tramites_raw():
+    """
+    Carga el fixture tramites/fixtures/tramites.json.
+    Si no existe, devuelve lista vacía.
+    """
+    if not TRAMITES_FIXTURE.exists():
+        return []
+    with open(TRAMITES_FIXTURE, "r", encoding="utf-8") as f:
+        return json.load(f)
+    
+def _normalize_tramite_raw(item):
+    """
+    Convierte un item crudo del fixture de tramites en un dict listo para usar en el chatbot.
+
+    Estructura resultante:
+    {
+        "pk": int,
+        "categoria": int,
+        "titulo": str,
+        "slug": str,
+        "descripcion": str,
+        "requisitos": [str],
+        "activo": bool,
+    }
+    """
+    if not item:
+        return None
+    fields = item.get("fields", {}) or {}
+    return {
+        "pk": item.get("pk"),
+        "categoria": fields.get("categoria"),
+        "titulo": (fields.get("titulo") or "").strip(),
+        "slug": (fields.get("slug") or "").strip(),
+        "descripcion": (fields.get("descripcion") or "").strip(),
+        # en tu fixture ya viene como lista de strings
+        "requisitos": list(fields.get("requisitos") or []),
+        "activo": bool(fields.get("activo", True)),
+    }
+
+
+def _normalize_tramite_raw(item):
+    """
+    Convierte un item crudo del fixture de tramites en un dict listo para usar en el chatbot.
+
+    Estructura resultante:
+    {
+        "pk": int,
+        "categoria": int,
+        "titulo": str,
+        "slug": str,
+        "descripcion": str,
+        "requisitos": [str],
+        "activo": bool,
+    }
+    """
+    if not item:
+        return None
+    fields = item.get("fields", {}) or {}
+    return {
+        "pk": item.get("pk"),
+        "categoria": fields.get("categoria"),
+        "titulo": (fields.get("titulo") or "").strip(),
+        "slug": (fields.get("slug") or "").strip(),
+        "descripcion": (fields.get("descripcion") or "").strip(),
+        
+        "requisitos": list(fields.get("requisitos") or []),
+        "activo": bool(fields.get("activo", True)),
+    }
+
+
+def detalle_beca(carnet: str):
+    asg = buscar_asignacion_por_carnet(carnet)
+    return resumen_asignacion(asg) if asg else None
+
+
+# -------------------------------------------------
+# TRÁMITES ACADÉMICOS (basados en tramites/fixtures/tramites.json)
+# -------------------------------------------------
+
+def get_tramites(activos_only: bool = True, categoria: int | None = None):
+    """
+    Devuelve la lista de trámites normalizados desde el fixture.
+
+    Cada trámite es:
+    {
+        "pk": int,
+        "categoria": int,
+        "titulo": str,
+        "slug": str,
+        "descripcion": str,
+        "requisitos": [str],
+        "activo": bool,
+    }
+    """
+    tramites = []
+    for item in _load_tramites_raw():
+        t = _normalize_tramite_raw(item)
+        if not t:
+            continue
+        if activos_only and not t["activo"]:
+            continue
+        if categoria is not None and t["categoria"] != categoria:
+            continue
+        tramites.append(t)
+    return tramites
+
+
+def _tramites_index_by_slug():
+    """
+    Índice interno por slug (ej: 'tramite-titulo-universitario', 'protocolo-monografico', etc.).
+    """
+    idx = {}
+    for item in _load_tramites_raw():
+        fields = item.get("fields", {}) or {}
+        slug = (fields.get("slug") or "").lower()
+        if slug:
+            idx[slug] = item
+    return idx
+
+
+def get_tramite_by_slug(slug: str):
+    """
+    Devuelve UN trámite (normalizado) por su slug exacto.
+    Ejemplos de slug según tu fixture:
+      - 'tramite-titulo-universitario'
+      - 'protocolo-monografico'
+      - 'defensa-monografica'
+      - 'predefensa-monografica'
+      - 'baja-universidad'
+    """
+    if not slug:
+        return None
+    raw = _tramites_index_by_slug().get(slug.lower())
+    return _normalize_tramite_raw(raw) if raw else None
+
+
+def buscar_tramites_por_texto(query: str, categoria: int | None = None):
+    """
+    Búsqueda simple en título, slug, descripción y requisitos.
+
+    Útil si luego quieres implementar cosas como:
+      - 'buscame cualquier trámite que hable de monografía'
+    """
+    q = (query or "").strip().lower()
+    if not q:
+        return []
+
+    resultados = []
+    for t in get_tramites(activos_only=True, categoria=categoria):
+        texto = " ".join([
+            t.get("titulo") or "",
+            t.get("slug") or "",
+            t.get("descripcion") or "",
+            " ".join(t.get("requisitos") or []),
+        ]).lower()
+        if q in texto:
+            resultados.append(t)
+    return resultados
+
+
+# Helpers específicos para los tres grupos que te interesan:
+#   - monografía (protocolo, predefensa, defensa)
+#   - título universitario
+#   - baja de la universidad
+
+_MONOGRAFIA_SLUGS = {
+    "protocolo-monografico",
+    "predefensa-monografica",
+    "defensa-monografica",
+}
+
+
+def get_tramites_monografia():
+    """
+    Devuelve TODOS los trámites relacionados con monografía:
+    protocolo, predefensa y defensa (según slugs del fixture).
+    """
+    return [
+        t for t in get_tramites()
+        if (t.get("slug") or "").lower() in _MONOGRAFIA_SLUGS
+    ]
+
+
+def get_tramite_titulo_universitario():
+    """
+    Devuelve el trámite principal de título universitario.
+    """
+    return get_tramite_by_slug("tramite-titulo-universitario")
+
+
+def get_tramite_baja_universidad():
+    """
+    Devuelve el trámite de baja académica.
+    """
+    return get_tramite_by_slug("baja-universidad")

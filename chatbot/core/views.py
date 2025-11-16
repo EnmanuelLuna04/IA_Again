@@ -13,7 +13,11 @@ from .data import (
     find_student_by_carnet,
     tiene_beca,
     detalle_beca,
+    get_tramites_monografia,
+    get_tramite_titulo_universitario,
+    get_tramite_baja_universidad,
 )
+
 
 CARNET_REGEX = re.compile(r"\b(20\d{2}-\d{4}I)\b", re.IGNORECASE)
 
@@ -111,69 +115,83 @@ def nlp_intent(request):
 
     elif intent == "estado_beca":
         if not carnet:
-            payload["answer"] = {"mensaje": "Necesito tu carnet (formato 2021-0001I) para verificar si tienes beca."}
+            payload["answer"] = {
+                "mensaje": "Pásame tu carnet (formato 2021-0001I) y te digo si tienes beca y de qué tipo."
+            }
         else:
             st = find_student_by_carnet(carnet)
             if not st:
-                payload["answer"] = {"mensaje": f"No encontré el carnet {carnet} en el sistema."}
+                payload["answer"] = {
+                    "mensaje": f"No encontré el carnet {carnet} en el sistema."
+                }
             else:
-                tiene = tiene_beca(carnet)
+                # Reutilizamos la lógica de detalle_beca para obtener la info completa
+                info = detalle_beca(carnet)
                 nombre = st.get("fields", {}).get("nombre") or carnet
-                if not tiene:
-                    payload["answer"] = {"estado_beca": {"tiene_beca": False, "carnet": carnet, "nombre": nombre}}
+
+                if not info:
+                    payload["answer"] = {
+                        "estado_beca": {
+                            "tiene_beca": False,
+                            "carnet": carnet,
+                            "nombre": nombre,
+                        }
+                    }
                 else:
-                    info = detalle_beca(carnet) or {}
                     payload["answer"] = {
                         "estado_beca": {
                             "tiene_beca": True,
                             "carnet": carnet,
                             "nombre": nombre,
+                            "beca": info.get("beca"),          # 👉 tipo/nombre de beca
+                            "porcentaje": info.get("porcentaje"),
                             "periodo": info.get("periodo"),
                             "estado": info.get("estado"),
                             "activo": info.get("activo", False),
                         }
                     }
 
-    # elif intent == "aplicar_beca":
-    #     # ¿menciona un tipo?
-    #     candidatos = buscar_beca_por_tipo(q)
-    #     if candidatos:
-    #         # Devolver requisitos de esa(s) beca(s), tu UI ya sabe mostrarlos
-    #         payload["answer"] = {
-    #             "becas": [{"tipo": b["tipo"], "requisitos": b["requisitos"]} for b in candidatos]
-    #         }
-    #     else:
-    #         # No mencionó tipo: pedir que elija, devolviendo lista (reutilizas scholarship-options)
-    #         tipos = [b["tipo"] or (b.get("nombre") or "Beca") for b in get_becas()]
-    #         payload["answer"] = {
-    #             "mensaje": "¿Por cuál beca te gustaría aplicar? Elige una para ver los pasos:",
-    #             "tipos_becas": tipos
-    #         }
-
     elif intent == "aplicar_beca":
         candidatos = buscar_beca_por_tipo(q)
         if candidatos:
-            payload["answer"] = {"becas": [{"tipo": b["tipo"], "requisitos": b["requisitos"]} for b in candidatos]}
+            payload["answer"] = {
+                "becas": [{"tipo": b["tipo"], "requisitos": b["requisitos"]} for b in candidatos]
+            }
         else:
             tipos = [b["tipo"] or (b.get("nombre") or "Beca") for b in get_becas()]
-            payload["answer"] = {"mensaje": "¿Por cuál beca te gustaría aplicar? Elige una:", "tipos_becas": tipos}
+            payload["answer"] = {
+                "mensaje": "¿Por cuál beca te gustaría aplicar? Elige una:",
+                "tipos_becas": tipos,
+            }
 
     elif intent == "donde_recibo_beca":
-        payload["answer"] = {"mensaje": "La beca se recibe en Caja o puede ser depositada (según tu asignación).", "metodos_entrega": ["Caja", "Depósito"]}
+        payload["answer"] = {
+            "mensaje": "La beca se recibe según tu asignación (pago en Caja o Depósito bancario).",
+            "metodos_entrega": ["Caja", "Depósito"],
+        }
 
-    
     elif intent == "detalle_beca":
         if not carnet:
-            payload["answer"] = {"mensaje": "Pásame tu carnet (formato 2021-0001I) y te digo cuál beca tienes."}
+            payload["answer"] = {
+                "mensaje": "Pásame tu carnet (formato 2021-0001I) y te digo cuál beca tienes."
+            }
         else:
             st = find_student_by_carnet(carnet)
             if not st:
-                payload["answer"] = {"mensaje": f"No encontré el carnet {carnet} en el sistema."}
+                payload["answer"] = {
+                    "mensaje": f"No encontré el carnet {carnet} en el sistema."
+                }
             else:
                 info = detalle_beca(carnet)
                 nombre = st.get("fields", {}).get("nombre") or carnet
                 if not info:
-                    payload["answer"] = {"detalle_beca": {"tiene_beca": False, "carnet": carnet, "nombre": nombre}}
+                    payload["answer"] = {
+                        "detalle_beca": {
+                            "tiene_beca": False,
+                            "carnet": carnet,
+                            "nombre": nombre,
+                        }
+                    }
                 else:
                     payload["answer"] = {
                         "detalle_beca": {
@@ -188,9 +206,69 @@ def nlp_intent(request):
                         }
                     }
 
+    # =========================
+    # NUEVOS INTENTS: TRÁMITES
+    # =========================
+    elif intent == "tramite_monografia":
+        tramites = get_tramites_monografia()
+        if not tramites:
+            payload["answer"] = {
+                "mensaje": "Por ahora no tengo registrados los requisitos de monografía. Te recomiendo consultar en Registro Académico."
+            }
+        else:
+            # Devolvemos todos los trámites relacionados: protocolo, predefensa y defensa
+            payload["answer"] = {
+                "tramite": "monografia",
+                "tramites": [
+                    {
+                        "titulo": t["titulo"],
+                        "slug": t["slug"],
+                        "descripcion": t["descripcion"],
+                        "requisitos": t["requisitos"],
+                    }
+                    for t in tramites
+                ],
+            }
+
+    elif intent == "tramite_titulo":
+        tramite = get_tramite_titulo_universitario()
+        if not tramite:
+            payload["answer"] = {
+                "mensaje": "Por ahora no tengo registrados los requisitos para el título universitario. Te recomiendo consultar en Registro Académico."
+            }
+        else:
+            payload["answer"] = {
+                "tramite": "titulo_universitario",
+                "titulo": tramite["titulo"],
+                "slug": tramite["slug"],
+                "descripcion": tramite["descripcion"],
+                "requisitos": tramite["requisitos"],
+            }
+
+    elif intent == "tramite_baja":
+        tramite = get_tramite_baja_universidad()
+        if not tramite:
+            payload["answer"] = {
+                "mensaje": "Por ahora no tengo registrado el proceso de baja. Te recomiendo consultar en Registro Académico."
+            }
+        else:
+            payload["answer"] = {
+                "tramite": "baja_universidad",
+                "titulo": tramite["titulo"],
+                "slug": tramite["slug"],
+                "descripcion": tramite["descripcion"],
+                "requisitos": tramite["requisitos"],
+            }
+
     else:
         payload["answer"] = {
-            "mensaje": "No estoy seguro. ¿Te interesan tipos de becas/requisitos o verificar por carnet si tienes beca?"
+            "mensaje": (
+                "No estoy seguro. ¿Te interesan tipos de becas/requisitos, "
+                "trámites de título/monografía/baja o verificar por carnet si tienes beca?"
+            )
         }
 
     return Response(payload, status=200)
+
+
+

@@ -4,5 +4,8 @@
   "donde_recibo_beca",
   "estado_beca",
   "requisitos_becas",
-  "tipos_becas"
+  "tipos_becas",
+  "tramite_baja",
+  "tramite_monografia",
+  "tramite_titulo"
 ]
